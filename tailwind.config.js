@@ -35,8 +35,8 @@ export default {
         corOutrosTextosPreto: '#666666',
 
         // hex botãoColor wpp
-        wppLight: '#075e54',
-        wppDark: '#25d366',
+        wppLight: '#2E7027',
+        wppDark: '#2E7027',
 
         // Minitags
         bgIcons: '#E0E2E9',
