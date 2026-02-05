@@ -109,10 +109,10 @@ const content = {
         alt: `Logomarca ${infos.name}`,
       },
       menuItems: [
-        'Início',
+        // 'Início',
         // 'Serviços',
         // 'Sobre',
-        'Perguntas',
+        // 'Perguntas',
         // 'Blog',
         // 'Mapa',
       ],
@@ -473,7 +473,7 @@ const content = {
           </p>
         </div>
       ),
-      ctaButtonText: 'Existe uma forma mais segura de crescer',
+      ctaButtonText: 'Analisar meu caso',
       // linkCtaButton: 'https://previa-principal.brasilmatos.com.br/',
     },
     emergency: {
