@@ -92,6 +92,7 @@ function StepsNovoTemplate({ colorMode }) {
               <MotionDivDownToUp>
                 <div className="flex flex-col gap-4 pt-12 w-fit justify-center items-start desktop1:hidden">
                   <ButtonReflexo
+                    onclick={() => gtag_report_conversion()}
                     icon={
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -164,6 +165,7 @@ function StepsNovoTemplate({ colorMode }) {
               <MotionDivDownToUp>
                 <div className="desktop1:flex flex-col gap-4 pt-4 w-fit justify-center items-start hidden">
                   <ButtonReflexo
+                    onclick={() => gtag_report_conversion()}
                     icon={
                       <svg
                         xmlns="http://www.w3.org/2000/svg"

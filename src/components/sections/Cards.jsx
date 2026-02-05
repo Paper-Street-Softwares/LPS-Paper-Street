@@ -99,6 +99,7 @@ function Cards({ colorMode }) {
 
               <MotionDivDownToUp>
                 <ButtonReflexo
+                  onclick={() => gtag_report_conversion()}
                   icon={
                     <svg
                       xmlns="http://www.w3.org/2000/svg"

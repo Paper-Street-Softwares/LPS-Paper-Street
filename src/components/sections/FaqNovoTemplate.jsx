@@ -81,7 +81,11 @@ function FaqNovoTemplate({ colorMode }) {
           <div
             className={`flex justify-center mt-12 scale-100 hover:scale-90 duration-500 transition-all cursor-pointer hover:underline ${textOpacity}`}
           >
-            <a href={content.texts.links.ctaWhatsapp} target="_blank">
+            <a
+              href={content.texts.links.ctaWhatsapp}
+              target="_blank"
+              onClick={() => gtag_report_conversion()}
+            >
               Clique aqui caso tenha mais dúvidas
             </a>
             {/* <ButtonReflexo

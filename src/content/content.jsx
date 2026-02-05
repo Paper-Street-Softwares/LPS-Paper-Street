@@ -46,8 +46,8 @@ export const infos = {
   domain: 'paperstreet.com.br', // Sem "www"
   phone: {
     ddd: '11',
-    firstPart: '98821', // Apenas os 5 primeiros números (incluindo o 9)
-    secondPart: '7850', // Apenas os 4 últimos números
+    firstPart: '99026', // Apenas os 5 primeiros números (incluindo o 9)
+    secondPart: '0977', // Apenas os 4 últimos números
   },
   phoneSecundario: {
     ddd: 'A_Definir',
@@ -90,7 +90,7 @@ export const infos = {
   tiktokProfile: '',
 
   whatsappDefaultMessage:
-    'Olá! Vim através do site de vocês e gostaria de tirar umas dúvidas.',
+    'Sou advogado(a) e preciso captar clientes pro meu escritório. Encontrei vocês no Google. Pode me ajudar?',
   whatsChatDefaultMessage:
     'Gostaria de falar conosco agora mesmo? Clque abaixo 👇',
   slogan: '',
@@ -657,7 +657,7 @@ const content = {
       // titleDireita: (
       //   <h1 className="text-title5 my-3 font-mainFont">WhatsApp</h1>
       // ),
-      ctaButtonText: 'A_Definir',
+      ctaButtonText: 'Analisar meu caso',
       ctaButtonAriaLabel:
         'Botão para chamada de ação para contato pelo whatsapp',
     },

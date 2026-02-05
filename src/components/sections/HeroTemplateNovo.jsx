@@ -160,6 +160,7 @@ function HeroTemplateNovo({
 
               <div className="flex flex-col gap-4 pt-4">
                 <ButtonReflexo
+                  onclick={() => gtag_report_conversion()}
                   icon={
                     <svg
                       xmlns="http://www.w3.org/2000/svg"

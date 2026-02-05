@@ -61,6 +61,7 @@ function Important({ colorMode }) {
 
         <MotionDivDownUp>
           <ButtonReflexo
+            onclick={() => gtag_report_conversion()}
             label={content.texts.important.ctaButtonText}
             icon={content.texts.svgs.wpp}
             link={content.texts.links.ctaWhatsapp}

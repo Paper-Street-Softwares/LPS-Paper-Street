@@ -61,6 +61,7 @@ function Authority({ colorMode }) {
 
         <MotionDivDownUp>
           <ButtonReflexo
+            onclick={() => gtag_report_conversion()}
             label={content.texts.authority.ctaButtonText}
             icon={content.texts.svgs.wpp}
             link={content.texts.links.ctaWhatsapp}

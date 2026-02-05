@@ -90,10 +90,10 @@ export default function WhatsappAnimated() {
   const colorButton = themes[colorMode] || themes.default
   const iconColor = colorMode === 'light' ? '#000' : '#000'
 
-  console.log({
-    whatsAppColor,
-    colorMode,
-  })
+  // console.log({
+  //   whatsAppColor,
+  //   colorMode,
+  // })
 
   return (
     <>
@@ -105,6 +105,7 @@ export default function WhatsappAnimated() {
         rel="noopener noreferrer"
         className={`fixed bottom-4 right-4 z-50 inline-flex items-center justify-center w-14 h-14 rounded-full border border-white/30 ${colorButton}`}
         aria-label="Botão flutuante de WhatsApp para contato"
+        onClick={() => gtag_report_conversion()}
       >
         <div
           className={`absolute z-10 top-0 left-0 w-full h-full rounded-full animate-ping border border-white ${colorButton} `}
