@@ -46,8 +46,8 @@ export const infos = {
   domain: "paperstreet.com.br", // Sem "www"
   phone: {
     ddd: "11",
-    firstPart: "99026", // Apenas os 5 primeiros números (incluindo o 9)
-    secondPart: "0977", // Apenas os 4 últimos números
+    firstPart: "98821", // Apenas os 5 primeiros números (incluindo o 9)
+    secondPart: "7850", // Apenas os 4 últimos números
   },
   phoneSecundario: {
     ddd: "A_Definir",
@@ -126,11 +126,11 @@ const content = {
       title: (
         <h1>
           Clientes para seu escritório, de forma{" "}
-          <span className="destaque relative italic font-light">
+          <span className="relative italic font-light destaque">
             previsível
             <span>
               <svg
-                className="hero-underline absolute bottom-2 left-0 w-full h-3 text-accent/30 hidden desktop1:flex"
+                className="absolute left-0 hidden w-full h-3 hero-underline bottom-2 text-accent/30 desktop1:flex"
                 viewBox="0 0 100 10"
                 preserveAspectRatio="none"
               >
@@ -142,7 +142,7 @@ const content = {
                 />
               </svg>
               <svg
-                className="hero-underline absolute bottom-0 left-0 w-full h-3 text-accent/30 desktop1:hidden"
+                className="absolute bottom-0 left-0 w-full h-3 hero-underline text-accent/30 desktop1:hidden"
                 viewBox="0 0 100 10"
                 preserveAspectRatio="none"
               >
@@ -300,7 +300,7 @@ const content = {
       title: (
         <h1>
           Conseguir
-          <span className="destaque italic font-light"> clientes </span>
+          <span className="italic font-light destaque"> clientes </span>
           na advocacia não deveria ser tão incerto.
         </h1>
       ),
@@ -497,7 +497,7 @@ const content = {
       title: (
         <h1>
           A_Definir
-          <span className="destaque italic font-light"> A_Definir</span>{" "}
+          <span className="italic font-light destaque"> A_Definir</span>{" "}
           A_Definir
         </h1>
       ),
@@ -576,7 +576,7 @@ const content = {
       title: (
         <h1>
           Um
-          <span className="destaque italic font-light"> método </span>
+          <span className="italic font-light destaque"> método </span>
           de captação de clientes feito para a advocacia.
         </h1>
       ),
@@ -649,12 +649,12 @@ const content = {
         },
       },
       // subtitleDireita: (
-      //   <p className="gap-3 flex font-mainFont opacity-60 mt-1">
+      //   <p className="flex gap-3 mt-1 font-mainFont opacity-60">
       //     <span>E N T R E </span> E M <span>C O N T A T O</span> V I A
       //   </p>
       // ),
       // titleDireita: (
-      //   <h1 className="text-title5 my-3 font-mainFont">WhatsApp</h1>
+      //   <h1 className="my-3 text-title5 font-mainFont">WhatsApp</h1>
       // ),
       ctaButtonText: "Seja atendido agora mesmo",
       ctaButtonAriaLabel:
