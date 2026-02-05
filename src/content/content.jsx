@@ -1,16 +1,16 @@
-import logo from '../assets/imgs/logo/logo.webp'
-import logoDesktop from '../assets/imgs/logo/logoDesktop.webp'
-import heroDefaultImg from '../assets/imgs/hero/lawHero.webp'
-import heroDefaultMobileImg from '../assets/imgs/hero/lawHeroMobile.webp'
+import logo from "../assets/imgs/logo/logo.webp";
+import logoDesktop from "../assets/imgs/logo/logoDesktop.webp";
+import heroDefaultImg from "../assets/imgs/hero/lawHero.webp";
+import heroDefaultMobileImg from "../assets/imgs/hero/lawHeroMobile.webp";
 
-import imgFeatures from '../assets/imgs/features/imgServices.webp'
+import imgFeatures from "../assets/imgs/features/imgServices.webp";
 
 // import aboutImg from '../assets/imgs/about/aboutImg.webp'
 // import team1 from '../assets/imgs/team/team1.webp'
 // import team2 from '../assets/imgs/team/team2.webp'
 // import aboutSocialImg from '../assets/imgs/about/aboutSocial.webp'
 
-import imgSteps from '../assets/imgs/steps/imgSteps.webp'
+import imgSteps from "../assets/imgs/steps/imgSteps.webp";
 
 import {
   Baby,
@@ -33,31 +33,31 @@ import {
   Brain,
   GrapeIcon,
   ChartNoAxesCombined,
-} from 'lucide-react'
-import { Users } from 'lucide-react'
-import { FileText } from 'lucide-react'
+} from "lucide-react";
+import { Users } from "lucide-react";
+import { FileText } from "lucide-react";
 
-const currentYear = new Date().getFullYear()
+const currentYear = new Date().getFullYear();
 
 export const infos = {
-  name: 'Paper Street',
-  email: 'contato', // Email desejado pelo cliente
-  emailSecundario: 'A_Definir', // Email desejado pelo cliente
-  domain: 'paperstreet.com.br', // Sem "www"
+  name: "Paper Street",
+  email: "contato", // Email desejado pelo cliente
+  emailSecundario: "A_Definir", // Email desejado pelo cliente
+  domain: "paperstreet.com.br", // Sem "www"
   phone: {
-    ddd: '11',
-    firstPart: '99026', // Apenas os 5 primeiros números (incluindo o 9)
-    secondPart: '0977', // Apenas os 4 últimos números
+    ddd: "11",
+    firstPart: "99026", // Apenas os 5 primeiros números (incluindo o 9)
+    secondPart: "0977", // Apenas os 4 últimos números
   },
   phoneSecundario: {
-    ddd: 'A_Definir',
-    firstPart: 'A_Definir', // Apenas os 5 primeiros números (incluindo o 9)
-    secondPart: 'A_Definir', // Apenas os 4 últimos números
+    ddd: "A_Definir",
+    firstPart: "A_Definir", // Apenas os 5 primeiros números (incluindo o 9)
+    secondPart: "A_Definir", // Apenas os 4 últimos números
   },
   phoneTerciario: {
-    ddd: 'A_Definir',
-    firstPart: 'A_Definir', // Apenas os 5 primeiros números (incluindo o 9)
-    secondPart: 'A_Definir', // Apenas os 4 últimos números
+    ddd: "A_Definir",
+    firstPart: "A_Definir", // Apenas os 5 primeiros números (incluindo o 9)
+    secondPart: "A_Definir", // Apenas os 4 últimos números
   },
   endereco: (
     <div>
@@ -83,18 +83,18 @@ export const infos = {
     </div>
   ),
   obs: <span className="italic">A_Definir </span>,
-  instagramProfile: '', // Sem o @
-  facebookProfile: '',
-  linkeDinProfile: '',
-  x: '',
-  tiktokProfile: '',
+  instagramProfile: "", // Sem o @
+  facebookProfile: "",
+  linkeDinProfile: "",
+  x: "",
+  tiktokProfile: "",
 
   whatsappDefaultMessage:
-    'Sou advogado(a) e preciso captar clientes pro meu escritório. Encontrei vocês no Google. Pode me ajudar?',
+    "Sou advogado(a) e preciso captar clientes pro meu escritório. Encontrei vocês no Google. Pode me ajudar?",
   whatsChatDefaultMessage:
-    'Gostaria de falar conosco agora mesmo? Clque abaixo 👇',
-  slogan: '',
-}
+    "Gostaria de falar conosco agora mesmo? Clque abaixo 👇",
+  slogan: "",
+};
 
 const content = {
   texts: {
@@ -116,16 +116,16 @@ const content = {
         // 'Blog',
         // 'Mapa',
       ],
-      menuId: ['home', 'faq'],
-      ariaLabel: 'Botão de Contato',
-      ctaButtonText: 'Contato',
-      ctaButtonTextResponsive: 'Contato',
+      menuId: ["home", "faq"],
+      ariaLabel: "Botão de Contato",
+      ctaButtonText: "Contato",
+      ctaButtonTextResponsive: "Contato",
     },
     hero: {
-      miniTag: 'CAPTAÇÃO DE CLIENTES PARA ADVOGADOS',
+      miniTag: "CAPTAÇÃO DE CLIENTES PARA ADVOGADOS",
       title: (
         <h1>
-          Clientes para seu escritório, de forma{' '}
+          Clientes para seu escritório, de forma{" "}
           <span className="destaque relative italic font-light">
             previsível
             <span>
@@ -154,7 +154,7 @@ const content = {
                 />
               </svg>
             </span>
-          </span>{' '}
+          </span>{" "}
           — sem ferir as regras da OAB.
         </h1>
       ),
@@ -168,46 +168,46 @@ const content = {
       heroDefaultImage: heroDefaultImg, // img da pessoa mobile
       heroDefaulMobiletImg: heroDefaultMobileImg,
 
-      alt: 'Imagem ilustrativa da Seção Início',
+      alt: "Imagem ilustrativa da Seção Início",
       ctaButtonAriaLabel:
-        'Botão para chamada de ação para contato pelo whatsapp',
-      ctaButtonText: 'Quero entender como funciona',
-      ctaButtonTextSecondary: 'A_Definir',
+        "Botão para chamada de ação para contato pelo whatsapp",
+      ctaButtonText: "Quero entender como funciona",
+      ctaButtonTextSecondary: "A_Definir",
       obsHero: {
         icon: <LucideIdCard />,
         iconTwo: <LucideIdCard />,
-        text: 'Sem promessas irreais. Estratégia clara, responsável e alinhada à realidade do seu escritório.',
-        textTwo: 'A_Definir',
+        text: "Sem promessas irreais. Estratégia clara, responsável e alinhada à realidade do seu escritório.",
+        textTwo: "A_Definir",
       },
-      secondaryCta: 'Contato',
+      secondaryCta: "Contato",
       images: {
         static: {
           img: {},
-          alt: '',
+          alt: "",
         },
         slide1: {
           img: {},
-          alt: '',
+          alt: "",
         },
         slide2: {
           img: {},
-          alt: '',
+          alt: "",
         },
         slide3: {
           img: {},
-          alt: '',
+          alt: "",
         },
       },
     },
     important: {
-      miniTag: 'DÚVIDAS E OBJEÇÕES COMUNS',
+      miniTag: "DÚVIDAS E OBJEÇÕES COMUNS",
       title:
-        'As principais preocupações dos advogados antes de investir em anúncios.',
+        "As principais preocupações dos advogados antes de investir em anúncios.",
       subtitle:
-        'Esclarecemos os pontos que normalmente geram insegurança para que você avance com mais clareza e segurança.',
+        "Esclarecemos os pontos que normalmente geram insegurança para que você avance com mais clareza e segurança.",
       cards: {
         card1: {
-          title: 'Já tentei antes e não funcionou',
+          title: "Já tentei antes e não funcionou",
           paragraph: (
             <p>
               Isso é mais comum do que parece. <br /> Na maioria dos casos, o
@@ -217,7 +217,7 @@ const content = {
           ),
         },
         card2: {
-          title: 'Tenho medo das regras da OAB',
+          title: "Tenho medo das regras da OAB",
           paragraph: (
             <p>
               Trabalhamos apenas com formatos e mensagens
@@ -226,7 +226,7 @@ const content = {
           ),
         },
         card3: {
-          title: 'Não sei se anúncios funcionam para minha área',
+          title: "Não sei se anúncios funcionam para minha área",
           paragraph: (
             <p>
               Funciona para advogados <span className="font-bold">comuns</span>,
@@ -235,7 +235,7 @@ const content = {
           ),
         },
         card4: {
-          title: 'Não quero investir sem ter clareza',
+          title: "Não quero investir sem ter clareza",
           paragraph: (
             <p>
               Antes de qualquer passo, avaliamos se há demanda real e se a
@@ -246,17 +246,17 @@ const content = {
         },
       },
       fraseObs:
-        'Entre em contato conosco e lhe daremos todo o suporte necessário',
-      ctaButtonText: 'Falar conosco agora',
+        "Entre em contato conosco e lhe daremos todo o suporte necessário",
+      ctaButtonText: "Falar conosco agora",
     },
     authority: {
-      miniTag: 'POR QUE CONFIAR NA PAPER STREET',
-      title: 'Especialistas em captação de clientes para advogados.',
+      miniTag: "POR QUE CONFIAR NA PAPER STREET",
+      title: "Especialistas em captação de clientes para advogados.",
       subtitle:
-        'Não somos uma empresa genérica. Nosso trabalho é pensado para o mercado jurídico, com foco em previsibilidade, ética e estratégia.',
+        "Não somos uma empresa genérica. Nosso trabalho é pensado para o mercado jurídico, com foco em previsibilidade, ética e estratégia.",
       cards: {
         card1: {
-          title: 'Especialização Jurídica',
+          title: "Especialização Jurídica",
           paragraph: (
             <>
               Atendemos exclusivamente advogados e escritórios de advocacia.
@@ -266,7 +266,7 @@ const content = {
           ),
         },
         card2: {
-          title: 'Conformidade com a OAB',
+          title: "Conformidade com a OAB",
           paragraph: (
             <>
               Toda a estratégia é construída respeitando o Código de Ética da
@@ -275,7 +275,7 @@ const content = {
           ),
         },
         card3: {
-          title: 'Transparência Total',
+          title: "Transparência Total",
           paragraph: (
             <>
               Você acompanha os números, investimentos e resultados. <br />
@@ -284,7 +284,7 @@ const content = {
           ),
         },
         card4: {
-          title: 'Visão de Negócio',
+          title: "Visão de Negócio",
           paragraph: (
             <>
               Nosso foco não é “anúncio bonito”. <br /> É ajudar seu escritório
@@ -293,10 +293,10 @@ const content = {
           ),
         },
       },
-      ctaButtonText: 'Falar com um especialista',
+      ctaButtonText: "Falar com um especialista",
     },
     features: {
-      miniTag: 'PARA ADVOGADOS QUE QUEREM CRESCER COM SEGURANÇA',
+      miniTag: "PARA ADVOGADOS QUE QUEREM CRESCER COM SEGURANÇA",
       title: (
         <h1>
           Conseguir
@@ -305,15 +305,15 @@ const content = {
         </h1>
       ),
       subtitle:
-        'Você trabalha, entrega resultado, tem clientes, mas nunca sabe quando o próximo caso vai entrar.',
+        "Você trabalha, entrega resultado, tem clientes, mas nunca sabe quando o próximo caso vai entrar.",
       imgFeatures: imgFeatures,
-      alt: 'imagem representativa da Seção Serviços',
-      titleMessageFeature: 'Esse cenário precisa mudar!',
-      subtitleMessageFeature: '',
+      alt: "imagem representativa da Seção Serviços",
+      titleMessageFeature: "Esse cenário precisa mudar!",
+      subtitleMessageFeature: "",
       cards: {
         card1: {
-          title: 'Dependência de indicação',
-          subtitle: 'Quando a indicação não vem, o caixa sente.',
+          title: "Dependência de indicação",
+          subtitle: "Quando a indicação não vem, o caixa sente.",
           description: (
             <div>
               A_Definir
@@ -323,12 +323,12 @@ const content = {
             </div>
           ),
           icon: <Users />,
-          buttonLabelModal: 'Fale Conosco',
-          buttonLabel: 'Saiba Mais',
+          buttonLabelModal: "Fale Conosco",
+          buttonLabel: "Saiba Mais",
         },
         card2: {
-          title: 'Tentativas frustradas de marketing',
-          subtitle: 'Postei, anunciei, contratei… e nada funcionou.',
+          title: "Tentativas frustradas de marketing",
+          subtitle: "Postei, anunciei, contratei… e nada funcionou.",
           description: (
             <div>
               A_Definir
@@ -338,12 +338,12 @@ const content = {
             </div>
           ),
           icon: <MegaphoneOff />,
-          buttonLabelModal: 'Fale Conosco',
-          buttonLabel: 'Saiba Mais',
+          buttonLabelModal: "Fale Conosco",
+          buttonLabel: "Saiba Mais",
         },
         card3: {
-          title: 'Medo de investir errado',
-          subtitle: 'Não posso jogar dinheiro fora com promessa vazia.',
+          title: "Medo de investir errado",
+          subtitle: "Não posso jogar dinheiro fora com promessa vazia.",
           description: (
             <div>
               A_Definir <br />
@@ -352,12 +352,12 @@ const content = {
             </div>
           ),
           icon: <HandCoins />,
-          buttonLabelModal: 'Fale Conosco',
-          buttonLabel: 'Saiba Mais',
+          buttonLabelModal: "Fale Conosco",
+          buttonLabel: "Saiba Mais",
         },
         card4: {
-          title: 'Insegurança com a OAB',
-          subtitle: 'Qualquer erro pode virar dor de cabeça ética.',
+          title: "Insegurança com a OAB",
+          subtitle: "Qualquer erro pode virar dor de cabeça ética.",
           description: (
             <div>
               A_Definir
@@ -367,12 +367,12 @@ const content = {
             </div>
           ),
           icon: <FileText />,
-          buttonLabelModal: 'Fale Conosco',
-          buttonLabel: 'Saiba Mais',
+          buttonLabelModal: "Fale Conosco",
+          buttonLabel: "Saiba Mais",
         },
         card5: {
-          title: 'Estagnação do escritório',
-          subtitle: 'Trabalho muito, mas não consigo escalar.',
+          title: "Estagnação do escritório",
+          subtitle: "Trabalho muito, mas não consigo escalar.",
           description: (
             <div>
               A_Definir
@@ -399,8 +399,8 @@ const content = {
               <path d="M12 18V6" />
             </svg>
           ),
-          buttonLabelModal: 'Fale Conosco',
-          buttonLabel: 'Saiba Mais',
+          buttonLabelModal: "Fale Conosco",
+          buttonLabel: "Saiba Mais",
         },
         // card6: {
         //   title: 'A_Definir',
@@ -420,47 +420,47 @@ const content = {
       },
       moreFeatures: {
         card1: {
-          ico: 'A_Definir',
-          title: 'A_Definir',
-          subtitle: 'A_Definir',
+          ico: "A_Definir",
+          title: "A_Definir",
+          subtitle: "A_Definir",
         },
         card2: {
-          ico: 'A_Definir',
-          title: 'A_Definir',
-          subtitle: 'A_Definir',
+          ico: "A_Definir",
+          title: "A_Definir",
+          subtitle: "A_Definir",
         },
         card3: {
-          ico: 'A_Definir',
-          title: 'A_Definir',
-          subtitle: 'A_Definir',
+          ico: "A_Definir",
+          title: "A_Definir",
+          subtitle: "A_Definir",
         },
       },
-      ctaButtonText: 'Preciso crescer',
+      ctaButtonText: "Preciso de ajuda com captação",
     },
     cardsSection: {
-      miniTag: 'SE NADA MUDAR, O CENÁRIO É ESTE',
-      title: 'A instabilidade de hoje vira estagnação amanhã.',
+      miniTag: "SE NADA MUDAR, O CENÁRIO É ESTE",
+      title: "A instabilidade de hoje vira estagnação amanhã.",
       subtitle:
-        'No mercado jurídico atual, depender apenas de indicações e tentativas aleatórias de marketing não sustenta crescimento.',
+        "No mercado jurídico atual, depender apenas de indicações e tentativas aleatórias de marketing não sustenta crescimento.",
       cards: {
         card1: {
-          title: 'Meses bons seguidos de meses fracos, sem previsibilidade',
+          title: "Meses bons seguidos de meses fracos, sem previsibilidade",
           icon: <ChartNoAxesCombined />,
         },
         card2: {
-          title: 'Mais horas trabalhadas para manter o mesmo faturamento',
+          title: "Mais horas trabalhadas para manter o mesmo faturamento",
           icon: <Hourglass />,
         },
         card3: {
-          title: 'Decisões tomadas no cansaço, não na estratégia',
+          title: "Decisões tomadas no cansaço, não na estratégia",
           icon: <Brain />,
         },
         card4: {
-          title: 'Dificuldade de investir no crescimento do escritório',
+          title: "Dificuldade de investir no crescimento do escritório",
           icon: <BriefcaseBusiness />,
         },
         card5: {
-          title: 'Sensação constante de estar ficando para trás no mercado',
+          title: "Sensação constante de estar ficando para trás no mercado",
           icon: <Scale />,
         },
       },
@@ -468,41 +468,41 @@ const content = {
         <div>
           <p>Indicação é importante.</p> <br />
           <p>
-            Mas indicação{' '}
+            Mas indicação{" "}
             <span className="font-bold">não é estratégia de crescimento</span>.
           </p>
         </div>
       ),
-      ctaButtonText: 'Analisar meu caso',
+      ctaButtonText: "Solicitar orçamento sem compromisso",
       // linkCtaButton: 'https://previa-principal.brasilmatos.com.br/',
     },
     emergency: {
-      minitag: 'A_Definir',
-      title: 'A_Definir',
-      subtitle: 'A_Definir',
-      ctaButtonText: 'A_Definir',
+      minitag: "A_Definir",
+      title: "A_Definir",
+      subtitle: "A_Definir",
+      ctaButtonText: "A_Definir",
     },
     maps: {
-      minitag: 'A_Definir',
-      title: 'A_Definir',
-      subtitle: 'A_Definir',
-      embedsrc: 'A_Definir',
+      minitag: "A_Definir",
+      title: "A_Definir",
+      subtitle: "A_Definir",
+      embedsrc: "A_Definir",
     },
     about: {
       imagem: {
         // img: aboutImg,
-        alt: 'Imagem ilustrativa da Seção Sobre',
+        alt: "Imagem ilustrativa da Seção Sobre",
       },
-      miniTag: 'A_Definir',
+      miniTag: "A_Definir",
       title: (
         <h1>
           A_Definir
-          <span className="destaque italic font-light"> A_Definir</span>{' '}
+          <span className="destaque italic font-light"> A_Definir</span>{" "}
           A_Definir
         </h1>
       ),
-      SecondPartTitle: '',
-      subtitle: 'A_Definir',
+      SecondPartTitle: "",
+      subtitle: "A_Definir",
       paragraph: (
         <div>
           A_Definir
@@ -512,7 +512,7 @@ const content = {
         </div>
       ),
 
-      buttonModalLabelAbout: 'Continuar lendo',
+      buttonModalLabelAbout: "Continuar lendo",
       modal: (
         <p className="text-mutedForeground font-secondFont">
           A_Definir
@@ -524,10 +524,10 @@ const content = {
           A_Definir
         </p>
       ),
-      paragraphModalCta: 'Entre em contato',
-      titleModal: 'A_Definir',
-      ctaButtonAriaLabel: 'Botão para entrar em contato',
-      ctaButtonText: 'A_Definir',
+      paragraphModalCta: "Entre em contato",
+      titleModal: "A_Definir",
+      ctaButtonAriaLabel: "Botão para entrar em contato",
+      ctaButtonText: "A_Definir",
       // aboutSocial: {
       //   img: {
       //     img: aboutSocialImg,
@@ -572,7 +572,7 @@ const content = {
     //   },
     // },
     steps: {
-      miniTag: 'O CAMINHO MAIS SEGURO PARA CRESCER',
+      miniTag: "O CAMINHO MAIS SEGURO PARA CRESCER",
       title: (
         <h1>
           Um
@@ -581,39 +581,39 @@ const content = {
         </h1>
       ),
       subtitle:
-        'A Paper Street estrutura e gerencia campanhas de tráfego pago pensadas exclusivamente para advogados que querem previsibilidade, sem ferir as normas da OAB.',
+        "A Paper Street estrutura e gerencia campanhas de tráfego pago pensadas exclusivamente para advogados que querem previsibilidade, sem ferir as normas da OAB.",
       img: imgSteps,
-      alt: 'Imagem ilustrativa da Seção Passo a Passo',
+      alt: "Imagem ilustrativa da Seção Passo a Passo",
       cards: {
         card1: {
           stepNumber: 1,
-          cardTitle: 'Diagnóstico Estratégico',
+          cardTitle: "Diagnóstico Estratégico",
           cardDescription:
-            'Analisamos sua área de atuação, tipo de cliente ideal e cenário competitivo para definir uma estratégia realista.',
+            "Analisamos sua área de atuação, tipo de cliente ideal e cenário competitivo para definir uma estratégia realista.",
         },
         card2: {
           stepNumber: 2,
-          cardTitle: 'Estrutura Ética de Captação',
+          cardTitle: "Estrutura Ética de Captação",
           cardDescription:
-            'Criamos anúncios, páginas e mensagens alinhadas ao Código de Ética da OAB, com linguagem profissional e segura.',
+            "Criamos anúncios, páginas e mensagens alinhadas ao Código de Ética da OAB, com linguagem profissional e segura.",
         },
         card3: {
           stepNumber: 3,
-          cardTitle: 'Anúncios com Intenção Real',
+          cardTitle: "Anúncios com Intenção Real",
           cardDescription:
-            'Atuamos em canais onde o potencial cliente já está buscando um advogado, focando em qualidade, não volume vazio.',
+            "Atuamos em canais onde o potencial cliente já está buscando um advogado, focando em qualidade, não volume vazio.",
         },
         card4: {
           stepNumber: 4,
-          cardTitle: 'Otimização e Transparência',
+          cardTitle: "Otimização e Transparência",
           cardDescription:
-            'Acompanhamos resultados, ajustamos campanhas e entregamos clareza total dos números para você saber exatamente o que está acontecendo.',
+            "Acompanhamos resultados, ajustamos campanhas e entregamos clareza total dos números para você saber exatamente o que está acontecendo.",
         },
       },
-      ctaButtonText: 'Quero entender como aplicar isso no meu escritório',
+      ctaButtonText: "Seja atendido agora mesmo",
     },
     ctaSecondary: {
-      miniTag: 'PRÓXIMO PASSO',
+      miniTag: "PRÓXIMO PASSO",
       title: (
         <h1>Descubra se o tráfego pago faz sentido para o seu escritório.</h1>
       ),
@@ -629,23 +629,23 @@ const content = {
       container: {
         label1: {
           icon: <Check />,
-          text: 'Entender se o tráfego pago realmente funciona para a sua área do Direito',
+          text: "Entender se o tráfego pago realmente funciona para a sua área do Direito",
         },
         label2: {
           icon: <Check />,
-          text: 'Avaliar se existe demanda qualificada pelo seu serviço na internet',
+          text: "Avaliar se existe demanda qualificada pelo seu serviço na internet",
         },
         label3: {
           icon: <Check />,
-          text: 'Ter clareza sobre o que pode ou não ser feito dentro das regras da OAB',
+          text: "Ter clareza sobre o que pode ou não ser feito dentro das regras da OAB",
         },
         label4: {
           icon: <Check />,
-          text: 'Evitar investimentos sem estratégia ou tentativas no escuro',
+          text: "Evitar investimentos sem estratégia ou tentativas no escuro",
         },
         label5: {
           icon: <Check />,
-          text: 'Tomar uma decisão mais segura antes de qualquer passo comercial',
+          text: "Tomar uma decisão mais segura antes de qualquer passo comercial",
         },
       },
       // subtitleDireita: (
@@ -656,9 +656,9 @@ const content = {
       // titleDireita: (
       //   <h1 className="text-title5 my-3 font-mainFont">WhatsApp</h1>
       // ),
-      ctaButtonText: 'Conversar com a Paper',
+      ctaButtonText: "Seja atendido agora mesmo",
       ctaButtonAriaLabel:
-        'Botão para chamada de ação para contato pelo whatsapp',
+        "Botão para chamada de ação para contato pelo whatsapp",
     },
     // blog: {
     //   miniTag: 'BLOG',
@@ -670,32 +670,32 @@ const content = {
     //   blogLink: 'mauromoncao.wordpress.com', //sem "https://"
     // },
     faq: {
-      miniTag: 'TIRE SUAS DÚVIDAS',
-      title: 'Perguntas Frequentes',
-      subtitle: 'Confira as perguntas abaixo para esclarecer suas dúvidas. ',
+      miniTag: "TIRE SUAS DÚVIDAS",
+      title: "Perguntas Frequentes",
+      subtitle: "Confira as perguntas abaixo para esclarecer suas dúvidas. ",
       questions: {
         question1: {
-          question: 'O tráfego pago funciona para qualquer área do Direito?',
+          question: "O tráfego pago funciona para qualquer área do Direito?",
           answer:
-            'Funciona para áreas onde já existe busca ativa por advogados ou onde o advogado ofereça serviços de interesse da população (mesmo que o público não tenha conhecimento desse serviço). Na conversa estratégica avaliamos se há demanda real para a sua especialidade antes de qualquer investimento.',
+            "Funciona para áreas onde já existe busca ativa por advogados ou onde o advogado ofereça serviços de interesse da população (mesmo que o público não tenha conhecimento desse serviço). Na conversa estratégica avaliamos se há demanda real para a sua especialidade antes de qualquer investimento.",
         },
         question2: {
-          question: 'Existe risco de ferir as regras da OAB?',
+          question: "Existe risco de ferir as regras da OAB?",
           answer:
-            'Toda a estratégia é construída respeitando o Código de Ética da OAB, com linguagem profissional e formatos permitidos, evitando exposição ou riscos desnecessários.',
+            "Toda a estratégia é construída respeitando o Código de Ética da OAB, com linguagem profissional e formatos permitidos, evitando exposição ou riscos desnecessários.",
         },
         question3: {
-          question: 'Preciso aparecer ou produzir conteúdo?',
+          question: "Preciso aparecer ou produzir conteúdo?",
           answer:
-            'É opcional. A captação também é possível de ser feita por anúncios  sem necessidade de vídeos, redes sociais ou exposição pessoal. Avaliamos o seu caso e adaptamos o que for melhor pra você.',
+            "É opcional. A captação também é possível de ser feita por anúncios  sem necessidade de vídeos, redes sociais ou exposição pessoal. Avaliamos o seu caso e adaptamos o que for melhor pra você.",
         },
         question4: {
-          question: 'Quanto tempo leva para avaliar se está funcionando?',
+          question: "Quanto tempo leva para avaliar se está funcionando?",
           answer:
-            'Cada estratégia tem seu próprio tempo de maturação. Vamos avaliar o seu caso em específico. Porém, já tivemos clientes que tiveram resultados expressivos em poucas semanas.',
+            "Cada estratégia tem seu próprio tempo de maturação. Vamos avaliar o seu caso em específico. Porém, já tivemos clientes que tiveram resultados expressivos em poucas semanas.",
         },
       },
-      paragraph: 'Clique aqui caso tenha mais dúvidas',
+      paragraph: "Clique aqui caso tenha mais dúvidas",
     },
     // team: {
     //   miniTag: 'A_Definir',
@@ -965,13 +965,13 @@ const content = {
     // },
     footer: {
       copyrightLine: ` ${currentYear} - ${infos.name} - Todos os direitos reservados`,
-      footerDivulgacaoText: 'Gostaria de ter um site como este? Clique aqui',
-      midSectionName: 'Até mais',
+      footerDivulgacaoText: "Gostaria de ter um site como este? Clique aqui",
+      midSectionName: "Até mais",
       footerText:
-        'Agradecemos sua visita! Esperamos que em breve você se torne nosso cliente e desfrute de todos os benefícios que oferecemos.',
-      footerSocialText: 'Siga a gente nas redes sociais:',
-      footerNavegacaoText: 'NAVEGAÇÃO',
-      desenvolvidoPor: 'Desenvolvido com excelência por Paper Street',
+        "Agradecemos sua visita! Esperamos que em breve você se torne nosso cliente e desfrute de todos os benefícios que oferecemos.",
+      footerSocialText: "Siga a gente nas redes sociais:",
+      footerNavegacaoText: "NAVEGAÇÃO",
+      desenvolvidoPor: "Desenvolvido com excelência por Paper Street",
       privacidade: (
         <div class="phone3:max-w-3xl mx-auto tablet1:px-6 text-gray-900 leading-relaxed font-secondFont">
           <h1 class="text-3xl font-bold mb-6">Política de Privacidade</h1>
@@ -997,7 +997,7 @@ const content = {
 
           <ul class="list-disc ml-6 mb-6 space-y-2">
             <li>
-              <strong>Autoridade Nacional de Proteção de Dados (ANPD):</strong>{' '}
+              <strong>Autoridade Nacional de Proteção de Dados (ANPD):</strong>{" "}
               órgão responsável pela fiscalização e aplicação da LGPD.
             </li>
 
@@ -1204,9 +1204,9 @@ const content = {
         </div>
       ),
       pontos: {
-        ponto1: 'Profissionalismo',
-        ponto2: 'Experiência',
-        ponto3: 'Resultados',
+        ponto1: "Profissionalismo",
+        ponto2: "Experiência",
+        ponto3: "Resultados",
       },
     },
     // socios: {
@@ -1278,8 +1278,8 @@ const content = {
       year: currentYear,
       footerexpediente: infos.expediente,
       obsFooter: infos.obs,
-      footerNavegacaoText: 'NAVEGAÇÃO',
-      footerDivulgacaoText: 'Gostaria de ter um site como este? Clique aqui',
+      footerNavegacaoText: "NAVEGAÇÃO",
+      footerDivulgacaoText: "Gostaria de ter um site como este? Clique aqui",
     },
     svgs: {
       wpp: (
@@ -1295,11 +1295,11 @@ const content = {
       ),
     },
   },
-}
+};
 
 export const abstractions = {
   titleModal: <strong>{content.texts.about.title}</strong>,
   subtitleModal: <strong>{content.texts.about.subtitle}</strong>,
-}
+};
 
-export default content
+export default content;

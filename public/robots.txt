@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://www.paperstreet.com.br/sitemap.xml
+Sitemap: https://advogados.paperstreet.com.br/sitemap.xml
