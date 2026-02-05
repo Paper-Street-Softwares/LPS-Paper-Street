@@ -81,7 +81,7 @@ function NavbarNovaTemplate({
               alt={content.texts.navbar.logo.alt}
               className="w-[100%] desktop1:hidden invert"
               width={277}
-              height={60}
+              height={49}
               fetchPriority="high"
             />
             <img
