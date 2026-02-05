@@ -61,9 +61,9 @@ export default function Index() {
           <Suspense fallback={null}>
             <FeaturesNovaTemplate
               colorMode={colorMode}
-              frasesDestaque={false}
+              frasesDestaque={true}
               accordion={false}
-              buttons={false}
+              buttons={true}
             />
             <Cards colorMode={colorMode} />
             <StepsNovoTemplate colorMode={colorMode} />

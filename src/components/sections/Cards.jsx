@@ -77,7 +77,7 @@ function Cards({ colorMode }) {
                       className={`h-fit border-t-4 ${borderT} bg-white transition-shadow duration-300 w-[80%] phone3:w-[200px] mx-auto rounded-md`}
                     >
                       <div className="pt-8 px-6 pb-8 h-full flex flex-col">
-                        <div className="w-14 h-14 rounded-full bg-primaryDark text-white flex items-center justify-center mx-auto text-primary mb-6">
+                        <div className="w-14 h-14 rounded-full bg-primaryLight text-black flex items-center justify-center mx-auto text-primary mb-6">
                           {item.icon}
                         </div>
                         <h3 className="text-xl font-secondFont font-bold text-primary text-center">

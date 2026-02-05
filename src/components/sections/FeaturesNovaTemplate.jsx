@@ -127,7 +127,7 @@ function FeaturesNovaTemplate({ colorMode, frasesDestaque, buttons }) {
                 </MotionDivDownToUp>
                 {buttons && (
                   <MotionDivDownToUp>
-                    <div className="flex flex-col gap-4 pt-4 w-fit justify-center items-start desktop1:m-auto">
+                    <div className="flex flex-col gap-4 pt-4 w-fit justify-center m-auto">
                       <ButtonReflexo
                         icon={
                           <svg

@@ -308,8 +308,8 @@ const content = {
         'Você trabalha, entrega resultado, tem clientes, mas nunca sabe quando o próximo caso vai entrar.',
       imgFeatures: imgFeatures,
       alt: 'imagem representativa da Seção Serviços',
-      titleMessageFeature: 'A_Definir',
-      subtitleMessageFeature: 'A_Definir',
+      titleMessageFeature: 'Esse cenário precisa mudar!',
+      subtitleMessageFeature: '',
       cards: {
         card1: {
           title: 'Dependência de indicação',
@@ -435,7 +435,7 @@ const content = {
           subtitle: 'A_Definir',
         },
       },
-      ctaButtonText: 'A_Definir',
+      ctaButtonText: 'Preciso crescer',
     },
     cardsSection: {
       miniTag: 'SE NADA MUDAR, O CENÁRIO É ESTE',
