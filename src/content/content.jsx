@@ -160,10 +160,9 @@ const content = {
       ),
       subtitle: (
         <p>
-          Um método de tráfego pago feito{' '}
-          <span className="font-bold">exclusivamente para advogados</span>,
-          focado em atrair clientes qualificados, com segurança jurídica e total
-          transparência.
+          Um método de tráfego pago desenvolvido exclusivamente para advogados,
+          com criação e gestão de anúncios no Google Ads e Meta Ads (Instagram e
+          Facebook), focado em atrair clientes qualificados.
         </p>
       ),
       heroDefaultImage: heroDefaultImg, // img da pessoa mobile
@@ -172,12 +171,12 @@ const content = {
       alt: 'Imagem ilustrativa da Seção Início',
       ctaButtonAriaLabel:
         'Botão para chamada de ação para contato pelo whatsapp',
-      ctaButtonText: 'Quero entender como funciona para meu escritório',
+      ctaButtonText: 'Quero entender como funciona',
       ctaButtonTextSecondary: 'A_Definir',
       obsHero: {
         icon: <LucideIdCard />,
         iconTwo: <LucideIdCard />,
-        text: 'Sem promessas irreais. Estratégia alinhada às normas da OAB e à realidade do seu escritório.',
+        text: 'Sem promessas irreais. Estratégia clara, responsável e alinhada à realidade do seu escritório.',
         textTwo: 'A_Definir',
       },
       secondaryCta: 'Contato',
@@ -248,7 +247,7 @@ const content = {
       },
       fraseObs:
         'Entre em contato conosco e lhe daremos todo o suporte necessário',
-      ctaButtonText: 'Falar conosco agora pelo WhatsApp',
+      ctaButtonText: 'Falar conosco agora',
     },
     authority: {
       miniTag: 'POR QUE CONFIAR NA PAPER STREET',
@@ -294,7 +293,7 @@ const content = {
           ),
         },
       },
-      ctaButtonText: 'Quero falar com um especialista',
+      ctaButtonText: 'Falar com um especialista',
     },
     features: {
       miniTag: 'PARA ADVOGADOS QUE QUEREM CRESCER COM SEGURANÇA',
@@ -657,7 +656,7 @@ const content = {
       // titleDireita: (
       //   <h1 className="text-title5 my-3 font-mainFont">WhatsApp</h1>
       // ),
-      ctaButtonText: 'Analisar meu caso',
+      ctaButtonText: 'Conversar com a Paper',
       ctaButtonAriaLabel:
         'Botão para chamada de ação para contato pelo whatsapp',
     },
@@ -678,7 +677,7 @@ const content = {
         question1: {
           question: 'O tráfego pago funciona para qualquer área do Direito?',
           answer:
-            'Funciona para áreas onde já existe busca ativa por advogados. Na conversa estratégica avaliamos se há demanda real para a sua especialidade antes de qualquer investimento.',
+            'Funciona para áreas onde já existe busca ativa por advogados ou onde o advogado ofereça serviços de interesse da população (mesmo que o público não tenha conhecimento desse serviço). Na conversa estratégica avaliamos se há demanda real para a sua especialidade antes de qualquer investimento.',
         },
         question2: {
           question: 'Existe risco de ferir as regras da OAB?',
@@ -688,12 +687,12 @@ const content = {
         question3: {
           question: 'Preciso aparecer ou produzir conteúdo?',
           answer:
-            'Não. A captação é feita por anúncios estratégicos, sem necessidade de vídeos, redes sociais ou exposição pessoal.',
+            'É opcional. A captação também é possível de ser feita por anúncios  sem necessidade de vídeos, redes sociais ou exposição pessoal. Avaliamos o seu caso e adaptamos o que for melhor pra você.',
         },
         question4: {
           question: 'Quanto tempo leva para avaliar se está funcionando?',
           answer:
-            'Normalmente é possível ter indicadores claros nas primeiras semanas, o suficiente para entender se a estratégia faz sentido e ajustar o que for necessário.',
+            'Cada estratégia tem seu próprio tempo de maturação. Vamos avaliar o seu caso em específico. Porém, já tivemos clientes que tiveram resultados expressivos em poucas semanas.',
         },
       },
       paragraph: 'Clique aqui caso tenha mais dúvidas',

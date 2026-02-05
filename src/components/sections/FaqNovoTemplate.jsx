@@ -78,23 +78,22 @@ function FaqNovoTemplate({ colorMode }) {
             </Accordion>
           </div>
 
-          <div
-            className={`flex justify-center mt-12 scale-100 hover:scale-90 duration-500 transition-all cursor-pointer hover:underline ${textOpacity}`}
-          >
-            <a
+          <div className={`flex justify-center mt-12 ${textOpacity}`}>
+            {/* <a
               href={content.texts.links.ctaWhatsapp}
               target="_blank"
               onClick={() => gtag_report_conversion()}
             >
               Clique aqui caso tenha mais dúvidas
-            </a>
-            {/* <ButtonReflexo
+            </a> */}
+            <ButtonReflexo
               icon={content.texts.svgs.wpp}
+              onclick={() => gtag_report_conversion()}
               link={content.texts.links.ctaWhatsapp}
-              label={content.texts.hero.ctaButtonText}
+              label={content.texts.faq.paragraph}
               colorMode={colorMode}
               className="my-0"
-            /> */}
+            />
           </div>
         </section>
       </SectionWrapper>
