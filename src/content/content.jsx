@@ -1,16 +1,16 @@
-import logo from "../assets/imgs/logo/logo.webp";
-import logoDesktop from "../assets/imgs/logo/logoDesktop.webp";
-import heroDefaultImg from "../assets/imgs/hero/lawHero.webp";
-import heroDefaultMobileImg from "../assets/imgs/hero/lawHeroMobile.webp";
+import logo from '../assets/imgs/logo/logo.webp'
+import logoDesktop from '../assets/imgs/logo/logoDesktop.webp'
+import heroDefaultImg from '../assets/imgs/hero/lawHero.webp'
+import heroDefaultMobileImg from '../assets/imgs/hero/lawHeroMobile.webp'
 
-import imgFeatures from "../assets/imgs/features/imgServices.webp";
+import imgFeatures from '../assets/imgs/features/imgServices.webp'
 
 // import aboutImg from '../assets/imgs/about/aboutImg.webp'
 // import team1 from '../assets/imgs/team/team1.webp'
 // import team2 from '../assets/imgs/team/team2.webp'
 // import aboutSocialImg from '../assets/imgs/about/aboutSocial.webp'
 
-import imgSteps from "../assets/imgs/steps/imgSteps.webp";
+import imgSteps from '../assets/imgs/steps/imgSteps.webp'
 
 import {
   Baby,
@@ -33,31 +33,31 @@ import {
   Brain,
   GrapeIcon,
   ChartNoAxesCombined,
-} from "lucide-react";
-import { Users } from "lucide-react";
-import { FileText } from "lucide-react";
+} from 'lucide-react'
+import { Users } from 'lucide-react'
+import { FileText } from 'lucide-react'
 
-const currentYear = new Date().getFullYear();
+const currentYear = new Date().getFullYear()
 
 export const infos = {
-  name: "Paper Street",
-  email: "contato", // Email desejado pelo cliente
-  emailSecundario: "A_Definir", // Email desejado pelo cliente
-  domain: "paperstreet.com.br", // Sem "www"
+  name: 'Paper Street',
+  email: 'contato', // Email desejado pelo cliente
+  emailSecundario: 'A_Definir', // Email desejado pelo cliente
+  domain: 'paperstreet.com.br', // Sem "www"
   phone: {
-    ddd: "11",
-    firstPart: "98821", // Apenas os 5 primeiros números (incluindo o 9)
-    secondPart: "7850", // Apenas os 4 últimos números
+    ddd: '11',
+    firstPart: '98821', // Apenas os 5 primeiros números (incluindo o 9)
+    secondPart: '7850', // Apenas os 4 últimos números
   },
   phoneSecundario: {
-    ddd: "A_Definir",
-    firstPart: "A_Definir", // Apenas os 5 primeiros números (incluindo o 9)
-    secondPart: "A_Definir", // Apenas os 4 últimos números
+    ddd: 'A_Definir',
+    firstPart: 'A_Definir', // Apenas os 5 primeiros números (incluindo o 9)
+    secondPart: 'A_Definir', // Apenas os 4 últimos números
   },
   phoneTerciario: {
-    ddd: "A_Definir",
-    firstPart: "A_Definir", // Apenas os 5 primeiros números (incluindo o 9)
-    secondPart: "A_Definir", // Apenas os 4 últimos números
+    ddd: 'A_Definir',
+    firstPart: 'A_Definir', // Apenas os 5 primeiros números (incluindo o 9)
+    secondPart: 'A_Definir', // Apenas os 4 últimos números
   },
   endereco: (
     <div>
@@ -83,18 +83,18 @@ export const infos = {
     </div>
   ),
   obs: <span className="italic">A_Definir </span>,
-  instagramProfile: "", // Sem o @
-  facebookProfile: "",
-  linkeDinProfile: "",
-  x: "",
-  tiktokProfile: "",
+  instagramProfile: '', // Sem o @
+  facebookProfile: '',
+  linkeDinProfile: '',
+  x: '',
+  tiktokProfile: '',
 
   whatsappDefaultMessage:
-    "Sou advogado(a) e preciso captar clientes pro meu escritório. Encontrei vocês no Google. Pode me ajudar?",
+    'Sou advogado(a) e preciso captar clientes pro meu escritório. Encontrei vocês no Google. Pode me ajudar?',
   whatsChatDefaultMessage:
-    "Gostaria de falar conosco agora mesmo? Clque abaixo 👇",
-  slogan: "",
-};
+    'Gostaria de falar conosco agora mesmo? Clque abaixo 👇',
+  slogan: '',
+}
 
 const content = {
   texts: {
@@ -116,21 +116,21 @@ const content = {
         // 'Blog',
         // 'Mapa',
       ],
-      menuId: ["home", "faq"],
-      ariaLabel: "Botão de Contato",
-      ctaButtonText: "Contato",
-      ctaButtonTextResponsive: "Contato",
+      menuId: ['home', 'faq'],
+      ariaLabel: 'Botão de Contato',
+      ctaButtonText: 'Contato',
+      ctaButtonTextResponsive: 'Contato',
     },
     hero: {
-      miniTag: "CAPTAÇÃO DE CLIENTES PARA ADVOGADOS",
+      miniTag: 'TRÁFEGO PAGO PARA ADVOGADOS',
       title: (
         <h1>
-          Clientes para seu escritório, de forma{" "}
-          <span className="relative italic font-light destaque">
-            previsível
+          Clientes para seu escritório, com{' '}
+          <span className="destaque relative italic font-light">
+            tráfego pago
             <span>
               <svg
-                className="absolute left-0 hidden w-full h-3 hero-underline bottom-2 text-accent/30 desktop1:flex"
+                className="hero-underline absolute bottom-2 left-0 w-full h-3 text-accent/30 hidden desktop1:flex"
                 viewBox="0 0 100 10"
                 preserveAspectRatio="none"
               >
@@ -142,7 +142,7 @@ const content = {
                 />
               </svg>
               <svg
-                className="absolute bottom-0 left-0 w-full h-3 hero-underline text-accent/30 desktop1:hidden"
+                className="hero-underline absolute bottom-0 left-0 w-full h-3 text-accent/30 desktop1:hidden"
                 viewBox="0 0 100 10"
                 preserveAspectRatio="none"
               >
@@ -154,166 +154,163 @@ const content = {
                 />
               </svg>
             </span>
-          </span>{" "}
-          — sem ferir as regras da OAB.
+          </span>{' '}
+          e dentro das regras da OAB
         </h1>
       ),
       subtitle: (
         <p>
-          Um método de tráfego pago desenvolvido exclusivamente para advogados,
-          com criação e gestão de anúncios no Google Ads e Meta Ads (Instagram e
-          Facebook), focado em atrair clientes qualificados.
+          Criamos e gerenciamos anúncios no Google Ads e Meta Ads (Instagram e
+          Facebook) <strong>para advogados</strong> que querem atrair clientes
+          de forma previsível e responsável.
         </p>
       ),
       heroDefaultImage: heroDefaultImg, // img da pessoa mobile
       heroDefaulMobiletImg: heroDefaultMobileImg,
 
-      alt: "Imagem ilustrativa da Seção Início",
+      alt: 'Imagem ilustrativa da Seção Início',
       ctaButtonAriaLabel:
-        "Botão para chamada de ação para contato pelo whatsapp",
-      ctaButtonText: "Quero entender como funciona",
-      ctaButtonTextSecondary: "A_Definir",
+        'Botão para chamada de ação para contato pelo whatsapp',
+      ctaButtonText: 'Quero atrair clientes com anúncios',
+      ctaButtonTextSecondary: 'A_Definir',
       obsHero: {
         icon: <LucideIdCard />,
         iconTwo: <LucideIdCard />,
-        text: "Sem promessas irreais. Estratégia clara, responsável e alinhada à realidade do seu escritório.",
-        textTwo: "A_Definir",
+        text: 'Nada de promessas irreais. Estratégia de tráfego pago pensada para a realidade do seu escritório e as normas da OAB.',
+        textTwo: 'A_Definir',
       },
-      secondaryCta: "Contato",
+      secondaryCta: 'Contato',
       images: {
         static: {
           img: {},
-          alt: "",
+          alt: '',
         },
         slide1: {
           img: {},
-          alt: "",
+          alt: '',
         },
         slide2: {
           img: {},
-          alt: "",
+          alt: '',
         },
         slide3: {
           img: {},
-          alt: "",
+          alt: '',
         },
       },
     },
     important: {
-      miniTag: "DÚVIDAS E OBJEÇÕES COMUNS",
+      miniTag: 'DÚVIDAS E OBJEÇÕES COMUNS',
       title:
-        "As principais preocupações dos advogados antes de investir em anúncios.",
+        'As principais dúvidas dos advogados antes de investir em anúncios.',
       subtitle:
-        "Esclarecemos os pontos que normalmente geram insegurança para que você avance com mais clareza e segurança.",
+        'Esclarecemos os pontos que normalmente geram insegurança para que você avance com mais clareza e segurança.',
       cards: {
         card1: {
-          title: "Já tentei antes e não funcionou",
+          title: 'Já tentei anúncios antes e não funcionou',
           paragraph: (
             <p>
-              Isso é mais comum do que parece. <br /> Na maioria dos casos, o
-              problema <span className="font-bold">não foi você</span>, foi a
-              estratégia errada.
+              Isso é mais comum do que parece. Na maioria dos casos, o problema
+              não foi o advogado, mas uma estratégia genérica e mal direcionada.
             </p>
           ),
         },
         card2: {
-          title: "Tenho medo das regras da OAB",
+          title: 'Tenho receio das regras da OAB',
           paragraph: (
             <p>
-              Trabalhamos apenas com formatos e mensagens
-              <span className="font-bold"> permitidas</span>, sem riscos éticos.
+              Trabalhamos apenas com formatos, mensagens e abordagens
+              permitidas, evitando qualquer risco ético ao seu escritório.
             </p>
           ),
         },
         card3: {
-          title: "Não sei se anúncios funcionam para minha área",
+          title: 'Não sei se anúncios funcionam para a minha área',
           paragraph: (
             <p>
-              Funciona para advogados <span className="font-bold">comuns</span>,
-              não apenas para quem é famoso ou influencer.
+              O tráfego pago funciona para advogados comuns, não apenas para
+              quem é conhecido ou atua como influencer.
             </p>
           ),
         },
         card4: {
-          title: "Não quero investir sem ter clareza",
+          title: 'Não quero investir sem ter clareza',
           paragraph: (
             <p>
-              Antes de qualquer passo, avaliamos se há demanda real e se a
-              estratégia <span className="font-bold">faz sentido</span> para o
-              seu caso.
+              Antes de qualquer passo, analisamos se existe demanda real e se a
+              estratégia faz sentido para o seu cenário.
             </p>
           ),
         },
       },
-      fraseObs:
-        "Entre em contato conosco e lhe daremos todo o suporte necessário",
-      ctaButtonText: "Falar conosco agora",
+      fraseObs: 'Nosso papel é orientar, não empurrar decisões.',
+      ctaButtonText: 'Conversar com a Paper Street',
     },
     authority: {
-      miniTag: "POR QUE CONFIAR NA PAPER STREET",
-      title: "Especialistas em captação de clientes para advogados.",
+      miniTag: 'POR QUE CONFIAR NA PAPER STREET',
+      title: 'Tráfego pago para advogados, com método.',
       subtitle:
-        "Não somos uma empresa genérica. Nosso trabalho é pensado para o mercado jurídico, com foco em previsibilidade, ética e estratégia.",
+        'Somos uma agência de marketing jurídico focada em tráfego pago, previsibilidade e conformidade com a OAB.',
       cards: {
         card1: {
-          title: "Especialização Jurídica",
+          title: 'Especialização jurídica',
           paragraph: (
             <>
-              Atendemos exclusivamente advogados e escritórios de advocacia.
-              Isso significa entender o público, a linguagem e os limites éticos
-              do setor.
+              Atendemos exclusivamente advogados e escritórios de advocacia,
+              entendendo o público, a linguagem e os limites éticos do setor.
             </>
           ),
         },
         card2: {
-          title: "Conformidade com a OAB",
+          title: 'Conformidade com a OAB',
           paragraph: (
             <>
               Toda a estratégia é construída respeitando o Código de Ética da
-              OAB, evitando riscos jurídicos e exposições desnecessárias.
+              OAB, evitando riscos e exposições desnecessárias ao escritório.
             </>
           ),
         },
         card3: {
-          title: "Transparência Total",
+          title: 'Transparência total',
           paragraph: (
             <>
-              Você acompanha os números, investimentos e resultados. <br />
+              Você acompanha investimentos, números e resultados com clareza.
               Sem relatórios confusos. Sem caixa-preta.
             </>
           ),
         },
         card4: {
-          title: "Visão de Negócio",
+          title: 'Visão de negócio',
           paragraph: (
             <>
-              Nosso foco não é “anúncio bonito”. <br /> É ajudar seu escritório
-              a construir um sistema previsível de captação.
+              Nosso foco não é anúncio bonito, mas construir um sistema
+              previsível de captação para o seu escritório.
             </>
           ),
         },
       },
-      ctaButtonText: "Falar com um especialista",
+      ctaButtonText: 'Falar com um especialista',
     },
     features: {
-      miniTag: "PARA ADVOGADOS QUE QUEREM CRESCER COM SEGURANÇA",
+      miniTag: 'PARA ADVOGADOS QUE QUEREM CRESCER COM PREVISIBILIDADE',
       title: (
         <h1>
           Conseguir
-          <span className="italic font-light destaque"> clientes </span>
-          na advocacia não deveria ser tão incerto.
+          <span className="destaque italic font-light"> clientes </span>
+          na advocacia não deveria depender da sorte.
         </h1>
       ),
       subtitle:
-        "Você trabalha, entrega resultado, tem clientes, mas nunca sabe quando o próximo caso vai entrar.",
+        'Você trabalha bem, entrega resultado, mas vive sem saber quando o próximo cliente vai aparecer — ou se vai aparecer.',
       imgFeatures: imgFeatures,
-      alt: "imagem representativa da Seção Serviços",
-      titleMessageFeature: "Esse cenário precisa mudar!",
-      subtitleMessageFeature: "",
+      alt: 'imagem representativa da Seção Serviços',
+      titleMessageFeature: 'Esse cenário precisa mudar!',
+      subtitleMessageFeature: '',
       cards: {
         card1: {
-          title: "Dependência de indicação",
-          subtitle: "Quando a indicação não vem, o caixa sente.",
+          title: 'Dependência de indicações',
+          subtitle:
+            'Quando a indicação não vem, o caixa do escritório sente na hora.',
           description: (
             <div>
               A_Definir
@@ -323,12 +320,13 @@ const content = {
             </div>
           ),
           icon: <Users />,
-          buttonLabelModal: "Fale Conosco",
-          buttonLabel: "Saiba Mais",
+          buttonLabelModal: 'Fale Conosco',
+          buttonLabel: 'Saiba Mais',
         },
         card2: {
-          title: "Tentativas frustradas de marketing",
-          subtitle: "Postei, anunciei, contratei… e nada funcionou.",
+          title: 'Falta de presença no Google',
+          subtitle:
+            'Quando o cliente procura um advogado, seu escritório não aparece.',
           description: (
             <div>
               A_Definir
@@ -338,12 +336,13 @@ const content = {
             </div>
           ),
           icon: <MegaphoneOff />,
-          buttonLabelModal: "Fale Conosco",
-          buttonLabel: "Saiba Mais",
+          buttonLabelModal: 'Fale Conosco',
+          buttonLabel: 'Saiba Mais',
         },
         card3: {
-          title: "Medo de investir errado",
-          subtitle: "Não posso jogar dinheiro fora com promessa vazia.",
+          title: 'Tentativas frustradas de marketing',
+          subtitle:
+            'Postagens, anúncios e promessas… mas nenhum cliente novo de verdade.',
           description: (
             <div>
               A_Definir <br />
@@ -352,12 +351,13 @@ const content = {
             </div>
           ),
           icon: <HandCoins />,
-          buttonLabelModal: "Fale Conosco",
-          buttonLabel: "Saiba Mais",
+          buttonLabelModal: 'Fale Conosco',
+          buttonLabel: 'Saiba Mais',
         },
         card4: {
-          title: "Insegurança com a OAB",
-          subtitle: "Qualquer erro pode virar dor de cabeça ética.",
+          title: 'Medo de investir errado',
+          subtitle:
+            'Não dá para arriscar dinheiro em estratégias que não geram retorno.',
           description: (
             <div>
               A_Definir
@@ -367,12 +367,12 @@ const content = {
             </div>
           ),
           icon: <FileText />,
-          buttonLabelModal: "Fale Conosco",
-          buttonLabel: "Saiba Mais",
+          buttonLabelModal: 'Fale Conosco',
+          buttonLabel: 'Saiba Mais',
         },
         card5: {
-          title: "Estagnação do escritório",
-          subtitle: "Trabalho muito, mas não consigo escalar.",
+          title: 'Insegurança com as regras da OAB',
+          subtitle: 'Qualquer erro em anúncios pode virar dor de cabeça ética.',
           description: (
             <div>
               A_Definir
@@ -399,68 +399,72 @@ const content = {
               <path d="M12 18V6" />
             </svg>
           ),
-          buttonLabelModal: "Fale Conosco",
-          buttonLabel: "Saiba Mais",
+          buttonLabelModal: 'Fale Conosco',
+          buttonLabel: 'Saiba Mais',
         },
-        // card6: {
-        //   title: 'A_Definir',
-        //   subtitle: 'A_Definir',
-        //   description: (
-        //     <div>
-        //       A_Definir
-        //       <br />
-        //       <br />
-        //       A_Definir
-        //     </div>
-        //   ),
-        //   icon: <Scale />,
-        //   buttonLabelModal: 'Fale Conosco',
-        //   buttonLabel: 'Saiba Mais',
-        // },
+        card6: {
+          title: 'Estagnação do escritório',
+          subtitle:
+            'Você trabalha muito, mas o faturamento não acompanha o esforço.',
+          description: (
+            <div>
+              A_Definir
+              <br />
+              <br />
+              A_Definir
+            </div>
+          ),
+          icon: <Scale />,
+          buttonLabelModal: 'Fale Conosco',
+          buttonLabel: 'Saiba Mais',
+        },
       },
       moreFeatures: {
         card1: {
-          ico: "A_Definir",
-          title: "A_Definir",
-          subtitle: "A_Definir",
+          ico: 'A_Definir',
+          title: 'A_Definir',
+          subtitle: 'A_Definir',
         },
         card2: {
-          ico: "A_Definir",
-          title: "A_Definir",
-          subtitle: "A_Definir",
+          ico: 'A_Definir',
+          title: 'A_Definir',
+          subtitle: 'A_Definir',
         },
         card3: {
-          ico: "A_Definir",
-          title: "A_Definir",
-          subtitle: "A_Definir",
+          ico: 'A_Definir',
+          title: 'A_Definir',
+          subtitle: 'A_Definir',
         },
       },
-      ctaButtonText: "Preciso de ajuda com captação",
+      ctaButtonText: 'Quero atrair clientes com anúncios',
     },
     cardsSection: {
-      miniTag: "SE NADA MUDAR, O CENÁRIO É ESTE",
-      title: "A instabilidade de hoje vira estagnação amanhã.",
+      miniTag: 'SE NADA MUDAR, O CENÁRIO É ESTE',
+      title: 'A instabilidade de hoje vira estagnação amanhã.',
       subtitle:
-        "No mercado jurídico atual, depender apenas de indicações e tentativas aleatórias de marketing não sustenta crescimento.",
+        'No mercado jurídico atual, depender só de indicações e ações de marketing sem estratégia impede o crescimento do escritório.',
       cards: {
         card1: {
-          title: "Meses bons seguidos de meses fracos, sem previsibilidade",
+          title:
+            'Meses bons alternados com meses fracos, sem qualquer previsibilidade',
           icon: <ChartNoAxesCombined />,
         },
         card2: {
-          title: "Mais horas trabalhadas para manter o mesmo faturamento",
+          title: 'Mais horas de trabalho para manter o mesmo faturamento',
           icon: <Hourglass />,
         },
         card3: {
-          title: "Decisões tomadas no cansaço, não na estratégia",
+          title: 'Decisões tomadas no cansaço, não em dados ou estratégia',
           icon: <Brain />,
         },
         card4: {
-          title: "Dificuldade de investir no crescimento do escritório",
+          title:
+            'Dificuldade para investir em anúncios e estrutura de crescimento',
           icon: <BriefcaseBusiness />,
         },
         card5: {
-          title: "Sensação constante de estar ficando para trás no mercado",
+          title:
+            'Sensação constante de estar ficando para trás no mercado jurídico',
           icon: <Scale />,
         },
       },
@@ -468,41 +472,41 @@ const content = {
         <div>
           <p>Indicação é importante.</p> <br />
           <p>
-            Mas indicação{" "}
+            Mas indicação{' '}
             <span className="font-bold">não é estratégia de crescimento</span>.
           </p>
         </div>
       ),
-      ctaButtonText: "Solicitar orçamento sem compromisso",
+      ctaButtonText: 'Quero uma análise do meu escritório',
       // linkCtaButton: 'https://previa-principal.brasilmatos.com.br/',
     },
     emergency: {
-      minitag: "A_Definir",
-      title: "A_Definir",
-      subtitle: "A_Definir",
-      ctaButtonText: "A_Definir",
+      minitag: 'A_Definir',
+      title: 'A_Definir',
+      subtitle: 'A_Definir',
+      ctaButtonText: 'A_Definir',
     },
     maps: {
-      minitag: "A_Definir",
-      title: "A_Definir",
-      subtitle: "A_Definir",
-      embedsrc: "A_Definir",
+      minitag: 'A_Definir',
+      title: 'A_Definir',
+      subtitle: 'A_Definir',
+      embedsrc: 'A_Definir',
     },
     about: {
       imagem: {
         // img: aboutImg,
-        alt: "Imagem ilustrativa da Seção Sobre",
+        alt: 'Imagem ilustrativa da Seção Sobre',
       },
-      miniTag: "A_Definir",
+      miniTag: 'A_Definir',
       title: (
         <h1>
           A_Definir
-          <span className="italic font-light destaque"> A_Definir</span>{" "}
+          <span className="destaque italic font-light"> A_Definir</span>{' '}
           A_Definir
         </h1>
       ),
-      SecondPartTitle: "",
-      subtitle: "A_Definir",
+      SecondPartTitle: '',
+      subtitle: 'A_Definir',
       paragraph: (
         <div>
           A_Definir
@@ -512,7 +516,7 @@ const content = {
         </div>
       ),
 
-      buttonModalLabelAbout: "Continuar lendo",
+      buttonModalLabelAbout: 'Continuar lendo',
       modal: (
         <p className="text-mutedForeground font-secondFont">
           A_Definir
@@ -524,10 +528,10 @@ const content = {
           A_Definir
         </p>
       ),
-      paragraphModalCta: "Entre em contato",
-      titleModal: "A_Definir",
-      ctaButtonAriaLabel: "Botão para entrar em contato",
-      ctaButtonText: "A_Definir",
+      paragraphModalCta: 'Entre em contato',
+      titleModal: 'A_Definir',
+      ctaButtonAriaLabel: 'Botão para entrar em contato',
+      ctaButtonText: 'A_Definir',
       // aboutSocial: {
       //   img: {
       //     img: aboutSocialImg,
@@ -572,93 +576,95 @@ const content = {
     //   },
     // },
     steps: {
-      miniTag: "O CAMINHO MAIS SEGURO PARA CRESCER",
+      miniTag: 'O CAMINHO MAIS SEGURO PARA CRESCER COM TRÁFEGO PAGO',
       title: (
         <h1>
           Um
-          <span className="italic font-light destaque"> método </span>
-          de captação de clientes feito para a advocacia.
+          <span className="destaque italic font-light"> método </span>
+          de captação de clientes criado para advogados
         </h1>
       ),
       subtitle:
-        "A Paper Street estrutura e gerencia campanhas de tráfego pago pensadas exclusivamente para advogados que querem previsibilidade, sem ferir as normas da OAB.",
+        'A Paper Street planeja, cria e gerencia campanhas de tráfego pago para advogados que querem atrair clientes com previsibilidade, respeitando as normas da OAB.',
       img: imgSteps,
-      alt: "Imagem ilustrativa da Seção Passo a Passo",
+      alt: 'Imagem ilustrativa da Seção Passo a Passo',
       cards: {
         card1: {
           stepNumber: 1,
-          cardTitle: "Diagnóstico Estratégico",
+          cardTitle: 'Diagnóstico estratégico do escritório',
           cardDescription:
-            "Analisamos sua área de atuação, tipo de cliente ideal e cenário competitivo para definir uma estratégia realista.",
+            'Analisamos sua área de atuação, perfil de cliente e concorrência para definir uma estratégia de anúncios realista e sustentável.',
         },
         card2: {
           stepNumber: 2,
-          cardTitle: "Estrutura Ética de Captação",
+          cardTitle: 'Estrutura ética de captação',
           cardDescription:
-            "Criamos anúncios, páginas e mensagens alinhadas ao Código de Ética da OAB, com linguagem profissional e segura.",
+            'Criamos anúncios, páginas e mensagens alinhadas ao Código de Ética da OAB, com linguagem profissional e segura para o seu escritório.',
         },
         card3: {
           stepNumber: 3,
-          cardTitle: "Anúncios com Intenção Real",
+          cardTitle: 'Anúncios com intenção real de contratação',
           cardDescription:
-            "Atuamos em canais onde o potencial cliente já está buscando um advogado, focando em qualidade, não volume vazio.",
+            'Atuamos em canais como o Google, onde o cliente já está procurando um advogado, priorizando qualidade e intenção — não volume vazio.',
         },
         card4: {
           stepNumber: 4,
-          cardTitle: "Otimização e Transparência",
+          cardTitle: 'Otimização contínua e transparência',
           cardDescription:
-            "Acompanhamos resultados, ajustamos campanhas e entregamos clareza total dos números para você saber exatamente o que está acontecendo.",
+            'Monitoramos resultados, ajustamos campanhas e mostramos os números com clareza, para você saber exatamente onde está investindo.',
         },
       },
-      ctaButtonText: "Seja atendido agora mesmo",
+      ctaButtonText: 'Quero aplicar esse método no meu escritório',
     },
     ctaSecondary: {
-      miniTag: "PRÓXIMO PASSO",
+      miniTag: 'PRÓXIMO PASSO',
       title: (
-        <h1>Descubra se o tráfego pago faz sentido para o seu escritório.</h1>
+        <h1>
+          Descubra se o tráfego pago é o caminho certo para o seu escritório.
+        </h1>
       ),
       subtitle: (
         <div>
           <p className="mb-6 font-secondFont">
-            Antes de qualquer proposta, fazemos uma conversa estratégica para
-            entender sua área, seus objetivos e avaliar se existe um caminho
-            seguro de captação para o seu caso.
+            Antes de qualquer proposta, realizamos uma conversa estratégica para
+            entender sua área de atuação, seus objetivos e avaliar se existe um
+            caminho ético e seguro de captação.
           </p>
         </div>
       ),
       container: {
         label1: {
           icon: <Check />,
-          text: "Entender se o tráfego pago realmente funciona para a sua área do Direito",
+          text: 'Entender se o tráfego pago funciona para a sua área do Direito',
         },
         label2: {
           icon: <Check />,
-          text: "Avaliar se existe demanda qualificada pelo seu serviço na internet",
+          text: 'Avaliar se existe demanda qualificada pelo seu serviço no Google e redes sociais',
         },
         label3: {
           icon: <Check />,
-          text: "Ter clareza sobre o que pode ou não ser feito dentro das regras da OAB",
+          text: 'Ter clareza sobre o que pode ou não ser feito dentro das normas da OAB',
         },
         label4: {
           icon: <Check />,
-          text: "Evitar investimentos sem estratégia ou tentativas no escuro",
+          text: 'Evitar investimentos sem estratégia ou tentativas no escuro',
         },
         label5: {
           icon: <Check />,
-          text: "Tomar uma decisão mais segura antes de qualquer passo comercial",
+          text: 'Tomar uma decisão mais segura antes de qualquer compromisso comercial',
         },
       },
       // subtitleDireita: (
-      //   <p className="flex gap-3 mt-1 font-mainFont opacity-60">
+      //   <p className="gap-3 flex font-mainFont opacity-60 mt-1">
       //     <span>E N T R E </span> E M <span>C O N T A T O</span> V I A
       //   </p>
       // ),
       // titleDireita: (
-      //   <h1 className="my-3 text-title5 font-mainFont">WhatsApp</h1>
+      //   <h1 className="text-title5 my-3 font-mainFont">WhatsApp</h1>
       // ),
-      ctaButtonText: "Seja atendido agora mesmo",
+      ctaButtonText: 'Conversar com um especialista da Paper',
       ctaButtonAriaLabel:
-        "Botão para chamada de ação para contato pelo whatsapp",
+        'Botão para chamada de ação para contato pelo whatsapp',
     },
     // blog: {
     //   miniTag: 'BLOG',
@@ -670,32 +676,32 @@ const content = {
     //   blogLink: 'mauromoncao.wordpress.com', //sem "https://"
     // },
     faq: {
-      miniTag: "TIRE SUAS DÚVIDAS",
-      title: "Perguntas Frequentes",
-      subtitle: "Confira as perguntas abaixo para esclarecer suas dúvidas. ",
+      miniTag: 'TIRE SUAS DÚVIDAS',
+      title: 'Perguntas Frequentes',
+      subtitle: 'Confira as perguntas abaixo para esclarecer suas dúvidas. ',
       questions: {
         question1: {
-          question: "O tráfego pago funciona para qualquer área do Direito?",
+          question: 'O tráfego pago funciona para qualquer área do Direito?',
           answer:
-            "Funciona para áreas onde já existe busca ativa por advogados ou onde o advogado ofereça serviços de interesse da população (mesmo que o público não tenha conhecimento desse serviço). Na conversa estratégica avaliamos se há demanda real para a sua especialidade antes de qualquer investimento.",
+            'Funciona para áreas onde já existe busca ativa por advogados ou onde o advogado ofereça serviços de interesse da população (mesmo que o público não tenha conhecimento desse serviço). Na conversa estratégica avaliamos se há demanda real para a sua especialidade antes de qualquer investimento.',
         },
         question2: {
-          question: "Existe risco de ferir as regras da OAB?",
+          question: 'Existe risco de ferir as regras da OAB?',
           answer:
-            "Toda a estratégia é construída respeitando o Código de Ética da OAB, com linguagem profissional e formatos permitidos, evitando exposição ou riscos desnecessários.",
+            'Toda a estratégia é construída respeitando o Código de Ética da OAB, com linguagem profissional e formatos permitidos, evitando exposição ou riscos desnecessários.',
         },
         question3: {
-          question: "Preciso aparecer ou produzir conteúdo?",
+          question: 'Preciso aparecer ou produzir conteúdo?',
           answer:
-            "É opcional. A captação também é possível de ser feita por anúncios  sem necessidade de vídeos, redes sociais ou exposição pessoal. Avaliamos o seu caso e adaptamos o que for melhor pra você.",
+            'É opcional. A captação também é possível de ser feita por anúncios  sem necessidade de vídeos, redes sociais ou exposição pessoal. Avaliamos o seu caso e adaptamos o que for melhor pra você.',
         },
         question4: {
-          question: "Quanto tempo leva para avaliar se está funcionando?",
+          question: 'Quanto tempo leva para avaliar se está funcionando?',
           answer:
-            "Cada estratégia tem seu próprio tempo de maturação. Vamos avaliar o seu caso em específico. Porém, já tivemos clientes que tiveram resultados expressivos em poucas semanas.",
+            'Cada estratégia tem seu próprio tempo de maturação. Vamos avaliar o seu caso em específico. Porém, já tivemos clientes que tiveram resultados expressivos em poucas semanas.',
         },
       },
-      paragraph: "Clique aqui caso tenha mais dúvidas",
+      paragraph: 'Clique aqui caso tenha mais dúvidas',
     },
     // team: {
     //   miniTag: 'A_Definir',
@@ -965,13 +971,13 @@ const content = {
     // },
     footer: {
       copyrightLine: ` ${currentYear} - ${infos.name} - Todos os direitos reservados`,
-      footerDivulgacaoText: "Gostaria de ter um site como este? Clique aqui",
-      midSectionName: "Até mais",
+      footerDivulgacaoText: 'Gostaria de ter um site como este? Clique aqui',
+      midSectionName: 'Até mais',
       footerText:
-        "Agradecemos sua visita! Esperamos que em breve você se torne nosso cliente e desfrute de todos os benefícios que oferecemos.",
-      footerSocialText: "Siga a gente nas redes sociais:",
-      footerNavegacaoText: "NAVEGAÇÃO",
-      desenvolvidoPor: "Desenvolvido com excelência por Paper Street",
+        'Agradecemos sua visita! Esperamos que em breve você se torne nosso cliente e desfrute de todos os benefícios que oferecemos.',
+      footerSocialText: 'Siga a gente nas redes sociais:',
+      footerNavegacaoText: 'NAVEGAÇÃO',
+      desenvolvidoPor: 'Desenvolvido com excelência por Paper Street',
       privacidade: (
         <div class="phone3:max-w-3xl mx-auto tablet1:px-6 text-gray-900 leading-relaxed font-secondFont">
           <h1 class="text-3xl font-bold mb-6">Política de Privacidade</h1>
@@ -997,7 +1003,7 @@ const content = {
 
           <ul class="list-disc ml-6 mb-6 space-y-2">
             <li>
-              <strong>Autoridade Nacional de Proteção de Dados (ANPD):</strong>{" "}
+              <strong>Autoridade Nacional de Proteção de Dados (ANPD):</strong>{' '}
               órgão responsável pela fiscalização e aplicação da LGPD.
             </li>
 
@@ -1204,9 +1210,9 @@ const content = {
         </div>
       ),
       pontos: {
-        ponto1: "Profissionalismo",
-        ponto2: "Experiência",
-        ponto3: "Resultados",
+        ponto1: 'Profissionalismo',
+        ponto2: 'Experiência',
+        ponto3: 'Resultados',
       },
     },
     // socios: {
@@ -1278,8 +1284,8 @@ const content = {
       year: currentYear,
       footerexpediente: infos.expediente,
       obsFooter: infos.obs,
-      footerNavegacaoText: "NAVEGAÇÃO",
-      footerDivulgacaoText: "Gostaria de ter um site como este? Clique aqui",
+      footerNavegacaoText: 'NAVEGAÇÃO',
+      footerDivulgacaoText: 'Gostaria de ter um site como este? Clique aqui',
     },
     svgs: {
       wpp: (
@@ -1295,11 +1301,11 @@ const content = {
       ),
     },
   },
-};
+}
 
 export const abstractions = {
   titleModal: <strong>{content.texts.about.title}</strong>,
   subtitleModal: <strong>{content.texts.about.subtitle}</strong>,
-};
+}
 
-export default content;
+export default content
