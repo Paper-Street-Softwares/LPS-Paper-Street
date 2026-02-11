@@ -127,7 +127,7 @@ const content = {
         <h1>
           Advogado, receba{" "}
           <span className="text-primaryLight">novos clientes todo dia</span> no
-          seu WhatsApp, com anúncios no Google Ads e Meta Ads
+          seu WhatsApp, com nossos anúncios no Google Ads e Meta Ads
         </h1>
       ),
       subtitle: (
@@ -146,7 +146,7 @@ const content = {
       alt: "Imagem ilustrativa da Seção Início",
       ctaButtonAriaLabel:
         "Botão para chamada de ação para contato pelo whatsapp",
-      ctaButtonText: "Quero atrair clientes com anúncios",
+      ctaButtonText: "Receber orçamento sem compromisso",
       ctaButtonTextSecondary: "A_Definir",
       obsHero: {
         icon: <LucideIdCard />,
