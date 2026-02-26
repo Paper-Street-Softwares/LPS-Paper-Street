@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
@@ -195,7 +195,10 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
         return false;
       }
     </script>
-
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
     <script>
       (function (window, document, script) {
         if (!window.tt) {
@@ -211,9 +214,5 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
         window.tt.accountCode = "065f4e87-42ce-42c4-87f2-420a05c17133";
       })(window, document, "//s.tintim.app/static/core/tintim-1.0.js");
     </script>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
