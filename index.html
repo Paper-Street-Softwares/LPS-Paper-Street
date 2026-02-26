@@ -169,15 +169,15 @@ Marketing jurídico profissional.
       src="https://www.googletagmanager.com/gtag/js?id=G-PRRXFDEV4G"
     ></script>
     <script>
-      window.dataLayer = window.dataLayer || []
+      window.dataLayer = window.dataLayer || [];
       function gtag() {
-        dataLayer.push(arguments)
+        dataLayer.push(arguments);
       }
-      gtag('js', new Date())
+      gtag("js", new Date());
 
-      gtag('config', 'G-PRRXFDEV4G')
+      gtag("config", "G-PRRXFDEV4G");
 
-      gtag('config', 'AW-17668069100')
+      gtag("config", "AW-17668069100");
     </script>
     <!-- Event snippet for Botão CTA - Captação de cliente pra Advogados conversion page
 In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
@@ -188,12 +188,28 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
         //     window.location = url
         //   }
         // }
-        gtag('event', 'conversion', {
-          send_to: 'AW-17668069100/w8lSCPzXgvMbEOyt5ehB',
+        gtag("event", "conversion", {
+          send_to: "AW-17668069100/w8lSCPzXgvMbEOyt5ehB",
           // event_callback: callback,
-        })
-        return false
+        });
+        return false;
       }
+    </script>
+
+    <script>
+      (function (window, document, script) {
+        if (!window.tt) {
+          window.tt = window.tt || {};
+
+          c = document.getElementsByTagName("head")[0];
+          k = document.createElement("script");
+          k.async = 1;
+          k.src = script;
+          c.appendChild(k);
+        }
+
+        window.tt.accountCode = "065f4e87-42ce-42c4-87f2-420a05c17133";
+      })(window, document, "//s.tintim.app/static/core/tintim-1.0.js");
     </script>
   </head>
   <body>

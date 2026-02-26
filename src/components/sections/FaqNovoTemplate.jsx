@@ -1,40 +1,40 @@
-import React from 'react'
-import SectionArea from '../sectionElements/SectionArea'
-import SectionWrapper from '../sectionElements/SectionWrapper'
+import React from "react";
+import SectionArea from "../sectionElements/SectionArea";
+import SectionWrapper from "../sectionElements/SectionWrapper";
 import {
   Accordion,
   AccordionItem,
   AccordionTrigger,
   AccordionContent,
-} from '../interactives/FaqNovo'
-import content from '../../content/content'
-import SectionHeaderNovo from '../sectionElements/SectionHeaderNovo'
-import ButtonReflexo from '../../components/interactives/ButtonReflexo'
+} from "../interactives/FaqNovo";
+import content from "../../content/content";
+import SectionHeaderNovo from "../sectionElements/SectionHeaderNovo";
+import ButtonReflexo from "../../components/interactives/ButtonReflexo";
 
 function FaqNovoTemplate({ colorMode }) {
-  const faqs = Object.values(content.texts.faq.questions)
+  const faqs = Object.values(content.texts.faq.questions);
 
   // Classes dinâmicas conforme colorMode
-  let text, textOpacity, hoverText, backgroundMode
+  let text, textOpacity, hoverText, backgroundMode;
   switch (colorMode) {
-    case 'light':
-      text = 'text-corTitulosPreto'
-      text = 'text-corTitulosPreto'
-      hoverText = 'hover:text-primaryDark'
-      backgroundMode = 'bg-white'
+    case "light":
+      text = "text-corTitulosPreto";
+      text = "text-corTitulosPreto";
+      hoverText = "hover:text-primaryDark";
+      backgroundMode = "bg-white";
 
-      break
-    case 'dark':
-      text = 'text-corTitulosBranca'
-      textOpacity = 'text-corOutrosTextosBranca'
-      hoverText = 'hover:text-primaryLight'
-      backgroundMode = 'bg-black'
-      break
+      break;
+    case "dark":
+      text = "text-corTitulosBranca";
+      textOpacity = "text-corOutrosTextosBranca";
+      hoverText = "hover:text-primaryLight";
+      backgroundMode = "bg-black";
+      break;
     default:
-      text = 'text-corTitulosBranca'
-      textOpacity = 'text-corOutrosTextosBranca'
-      hoverText = 'hover:text-primaryDark'
-      backgroundMode = 'bg-white'
+      text = "text-corTitulosBranca";
+      textOpacity = "text-corOutrosTextosBranca";
+      hoverText = "hover:text-primaryDark";
+      backgroundMode = "bg-white";
   }
 
   return (
@@ -89,7 +89,7 @@ function FaqNovoTemplate({ colorMode }) {
             <ButtonReflexo
               icon={content.texts.svgs.wpp}
               onclick={() => gtag_report_conversion()}
-              link={content.texts.links.ctaWhatsapp}
+              link="https://tintim.link/whatsapp/065f4e87-42ce-42c4-87f2-420a05c17133/f5b25419-0c1b-4165-95a0-93e1edd1ac0f"
               label={content.texts.faq.paragraph}
               colorMode={colorMode}
               className="my-0"
@@ -98,7 +98,7 @@ function FaqNovoTemplate({ colorMode }) {
         </section>
       </SectionWrapper>
     </SectionArea>
-  )
+  );
 }
 
-export default FaqNovoTemplate
+export default FaqNovoTemplate;

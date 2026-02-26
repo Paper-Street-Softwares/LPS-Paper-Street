@@ -1,14 +1,14 @@
-import React from 'react'
-import { useState, useEffect } from 'react'
-import { MessageCircle, Menu, X } from 'lucide-react'
-import { Button } from '../interactives/ButtonNovoTemplate'
-import { motion } from 'framer-motion'
-import SectionAria from '../../components/sectionElements/SectionArea'
-import SectionWrapper from '../../components/sectionElements/SectionWrapper'
-import content from '../../content/content'
-import { Link } from 'react-scroll'
-import ButtonReflexo from '../interactives/ButtonReflexo'
-import { useContext } from 'react'
+import React from "react";
+import { useState, useEffect } from "react";
+import { MessageCircle, Menu, X } from "lucide-react";
+import { Button } from "../interactives/ButtonNovoTemplate";
+import { motion } from "framer-motion";
+import SectionAria from "../../components/sectionElements/SectionArea";
+import SectionWrapper from "../../components/sectionElements/SectionWrapper";
+import content from "../../content/content";
+import { Link } from "react-scroll";
+import ButtonReflexo from "../interactives/ButtonReflexo";
+import { useContext } from "react";
 
 function NavbarNovaTemplate({
   colorMode,
@@ -18,44 +18,44 @@ function NavbarNovaTemplate({
   colorMenu,
   bgOpacitySidebar,
 }) {
-  const [isScrolled, setIsScrolled] = useState(false)
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
-  const [active, setActive] = useState(null)
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [active, setActive] = useState(null);
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 20)
-    }
-    window.addEventListener('scroll', handleScroll)
-    return () => window.removeEventListener('scroll', handleScroll)
-  }, [])
+      setIsScrolled(window.scrollY > 20);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
-  const labels = content.texts.navbar.menuItems
-  const ids = content.texts.navbar.menuId
+  const labels = content.texts.navbar.menuItems;
+  const ids = content.texts.navbar.menuId;
 
   switch (colorMode) {
-    case 'light':
-      backgrondMode = 'bg-white'
-      textOpacity = 'text-corTitulosPreto'
-      hoverLinks = ' bg-gradient-to-r from-primaryDark to-primaryDark '
-      colorMenu = 'text-primaryDark'
-      bgOpacitySidebar = 'bg-white/70'
+    case "light":
+      backgrondMode = "bg-white";
+      textOpacity = "text-corTitulosPreto";
+      hoverLinks = " bg-gradient-to-r from-primaryDark to-primaryDark ";
+      colorMenu = "text-primaryDark";
+      bgOpacitySidebar = "bg-white/70";
 
-      break
-    case 'dark':
-      backgrondMode = 'bg-black'
-      textOpacity = 'text-corOutrosTextosBranca'
-      hoverLinks = ' bg-gradient-to-r from-primaryLight to-primaryLight '
-      colorMenu = 'text-primaryLight'
-      bgOpacitySidebar = 'bg-black/70'
+      break;
+    case "dark":
+      backgrondMode = "bg-black";
+      textOpacity = "text-corOutrosTextosBranca";
+      hoverLinks = " bg-gradient-to-r from-primaryLight to-primaryLight ";
+      colorMenu = "text-primaryLight";
+      bgOpacitySidebar = "bg-black/70";
 
-      break
-    case 'default':
-      backgrondMode = 'bg-white'
-      textOpacity = 'text-corOutrosTextosBranca'
-      hoverLinks = ' bg-gradient-to-r from-primaryDark to-primaryDark '
-      colorMenu = 'text-primaryDark'
-      bgOpacitySidebar = 'bg-white/70'
+      break;
+    case "default":
+      backgrondMode = "bg-white";
+      textOpacity = "text-corOutrosTextosBranca";
+      hoverLinks = " bg-gradient-to-r from-primaryDark to-primaryDark ";
+      colorMenu = "text-primaryDark";
+      bgOpacitySidebar = "bg-white/70";
   }
 
   return (
@@ -64,18 +64,18 @@ function NavbarNovaTemplate({
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b border-transparent ${
           isScrolled
             ? `${backgrondMode} backdrop-blur-md py-2 shadow-sm border-shadowHero/10 h-auto`
-            : 'bg-transparent border-border/40 py-3 phone2:h-auto'
+            : "bg-transparent border-border/40 py-3 phone2:h-auto"
         }`}
       >
         <div className="container mx-auto flex items-center m-auto max-w-[1215px] h-full w-[90%] justify-between py-2">
           <div
             className={`flex flex-col z-20 relative  ${
               isScrolled
-                ? 'w-[20%] tablet1:w-[20%] tablet2:w-[25%] desktop1:w-[15%] desktop2:w-[15%] desktop3:w-[20%] transition-all duration-700'
-                : 'py-3 w-[30%] phone2:w-[30%] phone3:w-[35%] tablet1:w-[30%] tablet2:w-[30%] desktop1:w-[25%] desktop3:w-[25%] transition-all duration-700'
+                ? "w-[20%] tablet1:w-[20%] tablet2:w-[25%] desktop1:w-[15%] desktop2:w-[15%] desktop3:w-[20%] transition-all duration-700"
+                : "py-3 w-[30%] phone2:w-[30%] phone3:w-[35%] tablet1:w-[30%] tablet2:w-[30%] desktop1:w-[25%] desktop3:w-[25%] transition-all duration-700"
             }`}
           >
-            {' '}
+            {" "}
             <img
               src={content.texts.navbar.logo.img}
               alt={content.texts.navbar.logo.alt}
@@ -97,11 +97,11 @@ function NavbarNovaTemplate({
           {/* Desktop Nav */}
           <div className="hidden desktop1:flex items-center gap-8 text-sm font-secondFont font-medium">
             {labels.map((item, index) => {
-              const id = ids[index]
+              const id = ids[index];
 
               return (
                 <ul>
-                  {' '}
+                  {" "}
                   <li key={id}>
                     <a
                       href={`#${id}`}
@@ -110,16 +110,16 @@ function NavbarNovaTemplate({
                       data-track={id}
                       className={`cursor-pointer ${hoverLinks} bg-[length:0%_2px] bg-no-repeat bg-left-bottom transition-[background-size] duration-300 hover:bg-[length:100%_2px] ${textOpacity} font-secondFont`}
                       onClick={(e) => {
-                        e.preventDefault()
-                        const el = document.getElementById(id)
+                        e.preventDefault();
+                        const el = document.getElementById(id);
                         if (el) {
-                          const yOffset = -90
+                          const yOffset = -90;
                           const y =
                             el.getBoundingClientRect().top +
                             window.scrollY +
-                            yOffset
+                            yOffset;
 
-                          window.scrollTo({ top: y, behavior: 'smooth' })
+                          window.scrollTo({ top: y, behavior: "smooth" });
                         }
                       }}
                     >
@@ -127,11 +127,11 @@ function NavbarNovaTemplate({
                     </a>
                   </li>
                 </ul>
-              )
+              );
             })}
             <ButtonReflexo
               label="Contato"
-              link={content.texts.links.ctaWhatsapp}
+              link="https://tintim.link/whatsapp/065f4e87-42ce-42c4-87f2-420a05c17133/f5b25419-0c1b-4165-95a0-93e1edd1ac0f"
               onclick={() => gtag_report_conversion()}
               icon={
                 <svg
@@ -181,11 +181,11 @@ function NavbarNovaTemplate({
                   className={`flex flex-col gap-6 max-w-[500px] text-center items-center p-4 text-lg mx-auto font-secondFont font-medium border-l border-r border-b border-primary/20 rounded-md ${backgrondMode}`}
                 >
                   {labels.map((item, index) => {
-                    const id = ids[index]
+                    const id = ids[index];
 
                     return (
                       <ul>
-                        {' '}
+                        {" "}
                         <li key={id}>
                           <a
                             href={`#${id}`}
@@ -194,16 +194,16 @@ function NavbarNovaTemplate({
                             data-track={id}
                             className={`cursor-pointer bg-gradient-to-r from-primary to-primary bg-[length:0%_2px] bg-no-repeat bg-left-bottom transition-[background-size] duration-300 hover:bg-[length:100%_2px] ${textOpacity}`}
                             onClick={(e) => {
-                              e.preventDefault()
-                              const el = document.getElementById(id)
+                              e.preventDefault();
+                              const el = document.getElementById(id);
                               if (el) {
-                                const yOffset = -90
+                                const yOffset = -90;
                                 const y =
                                   el.getBoundingClientRect().top +
                                   window.scrollY +
-                                  yOffset
+                                  yOffset;
 
-                                window.scrollTo({ top: y, behavior: 'smooth' })
+                                window.scrollTo({ top: y, behavior: "smooth" });
                               }
                             }}
                           >
@@ -211,7 +211,7 @@ function NavbarNovaTemplate({
                           </a>
                         </li>
                       </ul>
-                    )
+                    );
                   })}
                   <ButtonReflexo
                     onclick={() => gtag_report_conversion()}
@@ -226,7 +226,7 @@ function NavbarNovaTemplate({
                         <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.472-.148-.67.15-.197.297-.768.966-.94 1.164-.173.198-.347.223-.644.074-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.372-.025-.521-.075-.149-.669-1.611-.916-2.207-.242-.579-.487-.5-.67-.51-.173-.007-.372-.009-.571-.009-.198 0-.52.074-.793.372-.273.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.095 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.226 1.36.194 1.872.118.571-.085 1.758-.718 2.006-1.412.248-.694.248-1.288.173-1.412-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.896a9.825 9.825 0 012.893 6.994c-.002 5.45-4.436 9.884-9.884 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.158 11.892c0 2.096.547 4.142 1.588 5.94L0 24l6.305-1.654a11.882 11.882 0 005.732 1.463h.005c6.554 0 11.89-5.335 11.892-11.892a11.821 11.821 0 00-3.466-8.413" />
                       </svg>
                     }
-                    link={content.texts.links.ctaWhatsapp}
+                    link="https://tintim.link/whatsapp/065f4e87-42ce-42c4-87f2-420a05c17133/f5b25419-0c1b-4165-95a0-93e1edd1ac0f"
                     label={content.texts.navbar.ctaButtonText}
                     colorMode={colorMode}
                     className="w-fit"
@@ -241,7 +241,7 @@ function NavbarNovaTemplate({
         </div>
       </nav>
     </SectionWrapper>
-  )
+  );
 }
 
-export default NavbarNovaTemplate
+export default NavbarNovaTemplate;
