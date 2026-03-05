@@ -11,6 +11,11 @@ import imgFeatures from "../assets/imgs/features/imgServices.webp";
 // import aboutSocialImg from '../assets/imgs/about/aboutSocial.webp'
 
 import imgSteps from "../assets/imgs/steps/imgSteps.webp";
+import feed1 from "../assets/imgs/socialproof/feed1.webp";
+import feed2 from "../assets/imgs/socialproof/feed2.webp";
+import feed3 from "../assets/imgs/socialproof/feed3.webp";
+import feed4 from "../assets/imgs/socialproof/feed4.webp";
+import feed5 from "../assets/imgs/socialproof/feed5.webp";
 
 import {
   Baby,
@@ -640,6 +645,20 @@ const content = {
       ctaButtonText: "Conversar com um especialista da Paper",
       ctaButtonAriaLabel:
         "Botão para chamada de ação para contato pelo whatsapp",
+    },
+    socialProof: {
+      minitag: "Avaliações Verificadas",
+      title: "A experiência de quem já contratou a Paper Street",
+      subtitle:
+        "Advogados que buscavam organização, posicionamento e crescimento encontraram na Paper Street a solução que precisavam.",
+      ctaButtonText: "Falar com a equipe agora",
+      images: {
+        img1: feed1,
+        img2: feed2,
+        img3: feed3,
+        img4: feed4,
+        img4: feed5,
+      },
     },
     // blog: {
     //   miniTag: 'BLOG',

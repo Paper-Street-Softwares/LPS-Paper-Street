@@ -3,11 +3,11 @@
 @tailwind utilities;
 
 @layer components {
-  [data-theme='light'] .destaque {
+  [data-theme="light"] .destaque {
     @apply text-primaryDark;
   }
 
-  [data-theme='dark'] .destaque {
+  [data-theme="dark"] .destaque {
     @apply text-primaryLight;
   }
 }
@@ -18,7 +18,7 @@
 }
 
 /* dark mode */
-[data-theme='dark'] .hero-underline {
+[data-theme="dark"] .hero-underline {
   color: rgba(164, 147, 147, 0.35);
 }
 body {
@@ -111,7 +111,7 @@ body {
 }
 
 .text-image {
-  background-image: url('../src/assets/imgs/hero/bgInstagram.webp');
+  background-image: url("../src/assets/imgs/hero/bgInstagram.webp");
   background-size: contain;
   background-position: top;
 
@@ -120,4 +120,55 @@ body {
   -webkit-background-clip: text;
 
   display: inline-block;
+}
+
+.p-carousel-indicators .p-reset {
+  display: hidden;
+}
+
+.p-carousel-prev,
+.p-carousel-next {
+  position: absolute !important;
+
+  z-index: 10;
+}
+
+/* Mobile até 1023px */
+@media (max-width: 1023px) {
+  .p-carousel-prev,
+  .p-carousel-next {
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 1px;
+    background-color: white;
+    padding: 8px;
+    border-radius: 100%;
+  }
+
+  .p-carousel-prev {
+    margin-left: -24px;
+  }
+
+  .p-carousel-next {
+    margin-left: 24px;
+  }
+}
+
+/* Desktop 1024px+ */
+@media (min-width: 1024px) {
+  .p-carousel-prev {
+    left: 0px;
+    bottom: -15px;
+    background-color: white;
+    padding: 8px;
+    border-radius: 100%;
+  }
+
+  .p-carousel-next {
+    left: 50px;
+    bottom: -15px;
+    background-color: white;
+    padding: 8px;
+    border-radius: 100%;
+  }
 }
