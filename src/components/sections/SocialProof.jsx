@@ -14,7 +14,7 @@ function SocialProof({ colorMode }) {
   const responsiveOptions = [
     {
       breakpoint: "3000px",
-      numVisible: 3,
+      numVisible: 2,
       numScroll: 2,
     },
     {
