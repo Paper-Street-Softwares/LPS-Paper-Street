@@ -32,7 +32,7 @@ function SocialProof({ colorMode }) {
         <img
           src={item}
           alt="imagens de fedback"
-          className="max-w-[800px] w-full rounded-lg border border-white"
+          className="max-w-[800px] w-full rounded-xl shadow-[0_5px_10px_rgba(255,255,255,0.5)]"
           width={634}
           height={625}
         />
@@ -50,8 +50,8 @@ function SocialProof({ colorMode }) {
           colorMode={colorMode}
         /> */}
 
-        <section className="bg-black rounded-xl p-5 desktop1:p-10">
-          <div className="flex w-full justify-between relative flex-col desktop1:flex-row">
+        <section className="bg-black rounded-xl p-5 desktop1:px-10 py-20">
+          <div className="flex w-full justify-between relative flex-col desktop1:flex-row gap-6">
             <div className="text-white font-secondFont tablet1:w-[400px] desktop1:w-[300px] mx-auto">
               <section className="flex items-center gap-2 mb-3 w-full justify-center desktop1:justify-start">
                 <img
