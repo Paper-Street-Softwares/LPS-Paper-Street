@@ -52,7 +52,7 @@ function SocialProof({ colorMode }) {
 
         <section className="bg-black rounded-xl p-5 desktop1:p-10">
           <div className="flex w-full justify-between relative flex-col desktop1:flex-row">
-            <div className="text-white font-secondFont tablet1:w-[400px] mx-auto">
+            <div className="text-white font-secondFont tablet1:w-[400px] desktop1:w-[300px] mx-auto">
               <section className="flex items-center gap-2 mb-3 w-full justify-center desktop1:justify-start">
                 <img
                   src={imgGoogle}
@@ -68,7 +68,7 @@ function SocialProof({ colorMode }) {
                   O que nossos clientes falam de nós
                 </h1>
               </section>
-              <section className="flex gap-4 mb-6 justify-center desktop1:justify-start">
+              <section className="flex gap-4 mb-6 justify-center desktop1:justify-start w-fit">
                 <h1 className="text-title4">4.9</h1>
                 <div>
                   <div className="flex">
@@ -108,7 +108,7 @@ function SocialProof({ colorMode }) {
               </section>
             </div>
 
-            <div className="desktop1:w-[500px] desktop2:w-[800px] pb-6">
+            <div className="desktop1:w-[600px]  pb-6">
               <MotionDivDownToUp>
                 <div className="w-full mb-6">
                   <Carousel
