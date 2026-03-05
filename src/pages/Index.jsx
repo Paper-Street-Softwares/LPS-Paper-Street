@@ -57,6 +57,7 @@ export default function Index() {
 
         <main>
           <HeroTemplateNovo colorMode={colorMode} obs={true} obsTwo={false} />
+          <SocialProof colorMode={colorMode} />
 
           <Suspense fallback={null}>
             <FeaturesNovaTemplate
@@ -69,7 +70,6 @@ export default function Index() {
             <StepsNovoTemplate colorMode={colorMode} />
             <Authority colorMode={colorMode} />
             <CtaNovoTemplate colorMode={colorMode} container={true} />
-            <SocialProof colorMode={colorMode} />
 
             <Important colorMode={colorMode} />
             <FaqNovoTemplate colorMode={colorMode} />

@@ -32,7 +32,7 @@ function SocialProof({ colorMode }) {
         <img
           src={item}
           alt="imagens de fedback"
-          className="max-w-[800px] w-full rounded-xl shadow-[0_5px_10px_rgba(255,255,255,0.5)]"
+          className="max-w-[800px] w-full rounded-xl"
           width={634}
           height={625}
         />
@@ -109,21 +109,19 @@ function SocialProof({ colorMode }) {
             </div>
 
             <div className="desktop1:w-[600px] pb-6">
-              <MotionDivDownToUp>
-                <div className="w-full mb-6">
-                  <Carousel
-                    value={imagens}
-                    numScroll={1}
-                    numVisible={2}
-                    showNavigators
-                    responsiveOptions={responsiveOptions}
-                    itemTemplate={productTemplate}
-                    circular
-                    showIndicators={false}
-                    autoplayInterval={5000}
-                  />
-                </div>
-              </MotionDivDownToUp>
+              <div className="w-full mb-6">
+                <Carousel
+                  value={imagens}
+                  numScroll={1}
+                  numVisible={2}
+                  showNavigators
+                  responsiveOptions={responsiveOptions}
+                  itemTemplate={productTemplate}
+                  circular
+                  showIndicators={false}
+                  autoplayInterval={5000}
+                />
+              </div>
             </div>
           </div>
 
