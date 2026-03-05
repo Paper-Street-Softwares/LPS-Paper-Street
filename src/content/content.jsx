@@ -657,7 +657,7 @@ const content = {
         img2: feed2,
         img3: feed3,
         img4: feed4,
-        img4: feed5,
+        img5: feed5,
       },
     },
     // blog: {

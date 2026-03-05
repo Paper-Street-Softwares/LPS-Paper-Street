@@ -99,7 +99,7 @@ function SocialProof({ colorMode }) {
         /> */}
 
         <section
-          className={`rounded-xl p-5 w-full desktop1:px-10 py-20 max-w-[1215px] ${bgContainer}`}
+          className={`rounded-xl p-5 w-full desktop1:px-10 py-5 max-w-[1215px] ${bgContainer}`}
         >
           <div className="flex w-full justify-between relative flex-col desktop1:flex-row desktop1:gap-6">
             <div className="font-secondFont tablet1:w-[400px] desktop1:w-[310px] mx-auto desktop1:mx-0">
