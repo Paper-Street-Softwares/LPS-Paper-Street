@@ -132,7 +132,7 @@ const content = {
         <h1>
           Advogado, receba{" "}
           <span className="text-primaryLight">novos clientes todo dia</span> no
-          seu WhatsApp, com nossos anúncios no Google Ads e Meta Ads
+          seu WhatsApp aparecendo em 1º no Google
         </h1>
       ),
       subtitle: (
@@ -653,11 +653,11 @@ const content = {
         "Advogados que buscavam organização, posicionamento e crescimento encontraram na Paper Street a solução que precisavam.",
       ctaButtonText: "Falar com a equipe agora",
       images: {
-        img1: feed1,
+        img1: feed5,
         img2: feed2,
         img3: feed3,
         img4: feed4,
-        img5: feed5,
+        img5: feed1,
       },
     },
     // blog: {
