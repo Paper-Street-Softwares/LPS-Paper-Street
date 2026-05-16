@@ -89,7 +89,8 @@ function FaqNovoTemplate({ colorMode }) {
             <ButtonReflexo
               icon={content.texts.svgs.wpp}
               onclick={() => gtag_report_conversion()}
-              link="https://tintim.link/whatsapp/065f4e87-42ce-42c4-87f2-420a05c17133/f5b25419-0c1b-4165-95a0-93e1edd1ac0f"
+              link="https://wa.me/5511988217850?text=Sou+advogado%28a%29+e+preciso+captar+clientes+pro+meu+escrit%C3%B3rio.+Encontrei+voc%C3%AAs+no+Google.+Pode+me+ajudar%3F
+"
               label={content.texts.faq.paragraph}
               colorMode={colorMode}
               className="my-0"

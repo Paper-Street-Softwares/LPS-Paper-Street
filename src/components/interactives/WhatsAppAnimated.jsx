@@ -66,7 +66,7 @@ export default function WhatsappAnimated() {
       await fetch(
         "https://cors-proxy-seven-beige.vercel.app/api/proxy?url=" +
           encodeURIComponent(
-            "https://script.google.com/macros/s/AKfycbwWTNo_3L1kz9xffgOqa0udGzvJpD8Y2nDzyh5aZNYKjSfL_KqmXA1J7MuR0KCREHvZ4w/exec",
+            "https://script.google.com/macros/s/AKfycbwWTNo_3L1kz9xffgOqa0udGzvJpD8Y2nDzyh5aZNYKjSfL_KqmXA1J7MuR0KCREHvZ4w/exec"
           ),
         {
           method: "POST",
@@ -76,7 +76,7 @@ export default function WhatsappAnimated() {
             email: telefone,
             origem: content.origem,
           }),
-        },
+        }
       );
     } catch (error) {
       // console.log('Erro ao enviar:', error)
@@ -100,7 +100,8 @@ export default function WhatsappAnimated() {
       {/* BOTÃO FLUTUANTE */}
 
       <a
-        href="https://tintim.link/whatsapp/065f4e87-42ce-42c4-87f2-420a05c17133/f5b25419-0c1b-4165-95a0-93e1edd1ac0f"
+        href="https://wa.me/5511988217850?text=Sou+advogado%28a%29+e+preciso+captar+clientes+pro+meu+escrit%C3%B3rio.+Encontrei+voc%C3%AAs+no+Google.+Pode+me+ajudar%3F
+"
         target="_blanck"
         rel="noopener noreferrer"
         className={`fixed bottom-4 right-4 z-50 inline-flex items-center justify-center w-14 h-14 rounded-full border border-white/30 ${colorButton}`}
